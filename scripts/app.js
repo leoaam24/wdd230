@@ -1,5 +1,3 @@
-
-
 // Long hand method ... building day and month names from built-in date methods.
 const daynames = [
 	"Sunday",
