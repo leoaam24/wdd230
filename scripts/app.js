@@ -1,6 +1,4 @@
-//toLocalceDateString
-const options = {weekday: 'long', day:'numeric', month: 'long', year:'numeric'};
-document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
+
 
 // Long hand method ... building day and month names from built-in date methods.
 const daynames = [
