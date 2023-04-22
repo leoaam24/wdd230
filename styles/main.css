@@ -1,0 +1,65 @@
+body {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+header, nav, main, footer {
+    margin: 1.25rem auto;
+    max-width: 760px;
+}
+
+header, footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius:  30px;
+}
+
+header {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 1fr 1fr;
+}
+
+header img {
+    max-width: 300px;
+    grid-column: 1/2;
+    align-self: center;
+    filter:drop-shadow(0px 0px 5px #b1b1b1);
+    border-radius: 30px;
+    
+}
+
+header h1 {
+    font-size: 2em;
+    grid-column: 2/2;
+    align-self: center;
+    text-align: left;
+    filter:drop-shadow(0px 0px 5px #b1b1b1);
+}
+
+
+
+section {
+    margin: 0 auto;
+}
+
+.solid {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.notes {
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 12pt;
+    font-weight: 100;
+    font-style: italic;
+}
+
+#lastmodified {
+    margin: 0;
+    color: lightblue;
+}
+
