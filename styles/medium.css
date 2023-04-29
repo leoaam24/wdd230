@@ -1,0 +1,9 @@
+@media only screen and (min-width: 32.5em) {
+    h1 {
+        font-size: .5em;
+        color: black;
+    }
+    header, footer {
+        background-color: antiquewhite;
+    }
+}

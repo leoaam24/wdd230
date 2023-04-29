@@ -1,0 +1,31 @@
+@media only screen and (max-width: 767px) {
+    body {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    header, footer  {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    header h1 {
+        font-size:x-large;
+    }
+    header h2 {
+        font-size: medium;
+    }
+
+    main {
+        display: block;  
+        justify-self: center;
+    }
+
+    #design-card-1 ,#design-card-2, #design-card-3 {
+        max-width: 80%;
+        margin: 10px auto;
+    }
+
+    #design-card-1 img, #design-card-2 img, #design-card-3 img {
+        max-width: 90%;
+    }
+}
