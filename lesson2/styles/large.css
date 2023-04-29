@@ -6,6 +6,7 @@ body {
 }
 
 header, footer {
+    font-family: 'Montserrat', sans-serif;
     max-width: 100%;
     margin-top: 10px;
     padding: 10px;
@@ -20,6 +21,7 @@ header,footer, h1, h2{
 
 
 main {
+    font-family: 'Poltawski Nowy', serif;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
@@ -50,10 +52,14 @@ main {
 }
 
 .card-info {
-    padding: 10px;
     text-align: left;
     margin-left: 10px;
     margin-bottom: 20px;
+}
+
+.card-comment {
+    text-align: justify;
+    padding: 15px;
 }
 
 
