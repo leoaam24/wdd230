@@ -1,10 +1,14 @@
-@media only screen and (min-width: 991px){
+@media only screen and (min-width: 992px){
     body {
-        max-width: 50%;
+        max-width: 75%;
     }
     
     header, footer {
         font-size: 1em;
+    }
+
+    header h1 {
+        margin-left: 20px;
     }
 
     nav {
@@ -16,44 +20,44 @@
         width: 100%;
     }
 
-    td {
-        padding: 10px;
+    tr td {
+        padding: 15px;
     }
 
     #color-sample1 {
         font-size: 40px;
-        width: 30%;
+        width: 20%;
         
     }
     
     #color-sample2 {
         font-size: 30px;
-        width: 30%;
+        
     }
     
     #color-sample3 {
         font-size: 20px;
-        width: 30%;
+        
     }
     
     #color-sample4 {
         font-size: 30px;
-        width: 30%;
+        
     }
     
     #color-sample5 {
         font-size: 25px;
-        width: 30%;
+        
     }
     
     #color-sample6 {
         font-size: 20px;
-        width: 30%;
+        
     }
     
     #color-sample7 {
         font-size: 16px;
-        width: 30%;
+        
     }
 
 }
