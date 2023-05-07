@@ -65,6 +65,8 @@ section h2{
 }
 
 section {
+    margin: 0 auto;
+    width: 80%;
     line-height: 1.5;
     font-size: 16px;
     margin-bottom: 20px;
@@ -136,6 +138,7 @@ background-color: #e7ece2;
 }
 
 #color-sample3 {
+    color: white;
     text-align: left;
     font-size: 20px;
     background-color: #354F52;
