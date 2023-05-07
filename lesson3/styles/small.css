@@ -65,8 +65,6 @@ section h2{
 }
 
 section {
-    margin: 0 auto;
-    width: 80%;
     line-height: 1.5;
     font-size: 16px;
     margin-bottom: 20px;
@@ -82,7 +80,7 @@ section p{
 }
 
 section ul {
-    margin-left: 150px;
+    margin-left: 40px;
 }
 
 section ul li{

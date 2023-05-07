@@ -16,7 +16,13 @@
     }
 
     section {
+        margin: 20px auto;
         width: 80%;
+    
+    }
+
+    section ul {
+        margin-left: 150px;
     }
 
     table {
