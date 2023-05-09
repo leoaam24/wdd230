@@ -3,8 +3,17 @@
         width: 75%;
     }
 
+    nav {
+        flex-direction: row;
+    }
+
     header, footer {
         font-size: 12px;
+    }
+
+    section ul {
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     table {

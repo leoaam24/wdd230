@@ -74,13 +74,14 @@ section {
     border-bottom: 1px solid #8a8a8a;
 }
 section p{
-    margin-left: 40px;
+    padding: 40px;
     color: black;
     text-align: left;
 }
 
 section ul {
     margin-left: 40px;
+    margin-right: 40px;
 }
 
 section ul li{
@@ -89,7 +90,6 @@ section ul li{
 
 .scenario-list {
     padding: 15px;
-    margin-left: 40px;
 }
 
 
@@ -97,6 +97,7 @@ table {
     font-size: .5em;
     margin-top: 10px;
     border-collapse:collapse;
+    max-width: 100%;
     width: 100%;
     margin-left: 0px;
 }
