@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Chamber of Commerce assignment in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css" media="screen">
+    <link rel="stylesheet" href="styles/large.css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poltawski+Nowy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <picture><img src="images/logo.png" alt="dcci-logo" class="logo"></picture>
+        <section class="headings">
+            <h1>Davao City</h1>
+            <h2>Chamber of Commerce & Industry</h2>
+        </section>
+        <div class="socials">
+        <a href="#"><img src="images/fb.png" alt="fb-logo"></a>
+        <a href="#"><img src="images/linkedin.png" alt="linkedin-logo"></a>
+        </div>
+        <button id="hamburgerBtn">&#9776;</button>
+        <div class="datetime-holder"><span id="datetime">Hi</span></div>
+    </header>
+    
+    <nav>
+        <ul id="primaryNav">
+            <li><a href="#" class="active">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="card-1"><h3>Hero with site name and call to action</h3></section>
+        <section class="card-2"><h3>Event</h3></section>
+        <section class="card-3"><h3>Weather</h3></section>
+        <section class="card-4"><h3>News Release</h3></section>
+        <section class="card-5">
+            <div class="spot1"><h3>Spotlight 1</h3></div>
+            <div class="spot2"><h3>Spotlight 2</h3></div>
+            <div class="spot3"><h3>Spotlight 3</h3></div>
+        </section>
+        <section class="card-6"><h3>Join</h3></section>
+    </main>
+    <footer>
+        <picture><img src="images/logo.png" alt="dccci-logo"></picture>
+        <section class="info-1">
+            <h4>Davao City Chamber of Commerce and Industry Inc.</h4>
+            <p>2nd Floor Davao City Chamber of Commerce and Industry Building</p>
+            <p> Bajada, Davao City 8000</p>
+        </section>
+        <div class="info-2">
+            <p>info@davaochamber.com</p>
+            <p>+63 ​(82) 222-1402 / (28) / 226-4433​</p>
+            <p>📍 Location Map</p>
+        </div>
+        <hr class="divider">
+        <div id="info-3">
+            &copy; Davao Chamber
+            <h4>Leo Alfred A. Mosquera</h4>
+            <p>WDD 230 Project</p>
+            <p>Last Modification: <span id="lastmodified"></span></p>
+        </div>
+        <div id="info-3-row">
+            &copy;<span id="currentyear"></span> Davao Chamber | Leo Alfred A. Mosquera | WDD 230 Project |<span id="lastmodified2"></span>
+        </div>
+    </footer>
+<script src="scripts/apps.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+@media only screen and (min-width: 62.5rem) {
+    body {
+        max-width: 100%;
+    }
+
+    header{
+        grid-template-columns: repeat(12, .5fr);
+    }
+
+    picture {
+        grid-column: 1;
+        margin-left: 2rem;
+    }
+
+    .headings {
+        grid-column: span 3;
+    }
+
+    .headings h1{
+        font-size: 3rem;
+    }
+
+
+    .headings h2{
+        font-size: 1.5rem;
+    }
+
+    .socials {
+        grid-column: 12;
+    }
+
+    #hamburgerBtn {
+        display: none;
+    }
+
+    .datetime-holder {
+        grid-column: span 12;
+        grid-row: 2;
+    }
+
+    #datetime {
+        padding-left: 5rem;
+    }
+
+
+    #primaryNav {
+        width: 30%;
+        position: absolute;
+        top: 2rem;
+        right: 20rem;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    
+    nav ul li a {
+        line-height: 1;
+        text-align: center;
+        padding: 1.5rem;
+        border: none;
+        color:#ffff;
+    }
+
+    .active {
+        background-color: rgba(0,0,0,.5);
+    }
+
+    main {
+        margin: 0 auto;
+        width: 95%;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    
+
+    .card-1 {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+
+    .card-1 h3, .card-2 h3, .card-3 h3, .card-4 h3, .card-6 h3 {
+        padding: 1rem;
+    }
+
+    .card-2 {
+        position: initial;
+        margin-right: 1rem;
+        grid-column: 1;
+        grid-row: 1;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .card-3 {
+        position:unset;
+        grid-column: 1;
+        grid-row: 2; 
+        padding: 0;
+        width:100%;
+        height: 100%;
+    }
+
+    .card-4 {
+        grid-column: 2;
+        grid-row: 3;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-5 {
+        grid-column: 3;
+        grid-row: 1 / span 3;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spot1 , .spot2, .spot3{
+        display: block;
+        flex: 1 1 auto;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .card-6 {
+        grid-column: 1;
+        grid-row: 3;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #info-3-row{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+}

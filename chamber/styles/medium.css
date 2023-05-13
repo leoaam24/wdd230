@@ -1,0 +1,148 @@
+@media only screen and (min-width: 35rem) {
+    header{
+        grid-template-columns: .1fr 1fr .7fr .5fr;
+        padding: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    header .logo {
+        max-height: 6rem;
+
+    }
+
+    .headings h1 {
+        font-size: 2rem;
+    }
+
+
+    .datetime-holder {
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+
+
+    #datetime {
+        padding: .5rem;
+        font-size: 1rem;
+    }
+
+
+    #hamburgerBtn {
+        margin-left: 4rem;
+        height: 40%;
+        width: 25%;
+    }
+
+    main {
+        gap: 0.5rem;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .card-1 {
+        grid-column: span 2;
+    }
+
+    .card-4 {
+        grid-column: span 2;
+        grid-row: 2
+    }
+    
+    .card-5 {
+        grid-column: span 2;
+        grid-row: 3;
+    }
+
+    .card-5 {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .5rem;
+        align-self: center;
+    }
+
+    .spot1, .spot2 {
+        padding-bottom: 5rem;
+        height: 100%;
+    }
+    
+
+    .card-6 {
+        grid-column: span 2;
+        grid-row: 4
+    }
+
+    .card-2 {
+        width: 100%;
+        position: relative;
+        padding-left: 4rem;
+        margin-right: 1rem;
+    }
+
+    .card-2 h3{
+        padding-left: 0;
+    }
+
+    .card-3 {
+        position: relative;
+        left:3.1rem;  
+        width: 80%;
+        grid-column: 2;
+
+    }
+
+
+    footer {
+        display: grid;
+        grid-template-columns: .3fr 1fr .5fr;
+        align-content: center;
+    }
+
+    footer img{
+        grid-column: 1/2;
+
+    }
+
+    .info-1{
+        padding-left: .5rem;
+        text-align: left;
+    }
+
+    .info-1 h4{
+        font-size: 1rem;
+        padding-right: 5rem;
+    }
+
+    .info-1 p{
+        padding-right: 5rem;
+    }
+
+
+    .info-2{
+        margin: 0;
+        padding-right: 3rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-2 p{
+        margin: .2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .divider {
+        grid-column: span 6;
+    }
+
+    #info-3.open {
+        display: none;
+    }
+
+    #info-3-row{
+        display: grid;
+        flex-direction: column;
+        grid-column: span 6;
+    }
+
+}
