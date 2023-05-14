@@ -63,11 +63,16 @@
         text-align: center;
         padding: 1.5rem;
         border: none;
+        font-weight:800;
+        -webkit-text-stroke: .5px rgba(0, 0, 0, .3);
         color:#ffff;
     }
 
     .active {
-        background-color: rgba(0,0,0,.5);
+        background-color: transparent;
+       text-decoration-color: rgb(255, 255, 255);
+       text-decoration-line: underline;
+       text-decoration-thickness:3px;
     }
 
     main {
