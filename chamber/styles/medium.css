@@ -68,6 +68,7 @@
     
 
     .card-6 {
+        display: block;
         grid-column: span 2;
         grid-row: 4
     }
