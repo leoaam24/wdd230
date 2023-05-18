@@ -9,7 +9,7 @@ header, footer{
     color: white;
     /* background-color: #354f52; */
     background-color: #354f52;
-    background-image: linear-gradient(to right,#446468 ,#354f52,#203031, #283536,#1b2122);
+    background: linear-gradient(to right,#446468 ,#354f52,#203031, #283536,#1b2122);
     text-align: left;
 
 }
