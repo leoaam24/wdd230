@@ -54,7 +54,7 @@ header img{
 
 .datetime-holder {
     background-color: #354f52;
-    background-image: linear-gradient(to right,#446468 ,#354f52, #283536,#1b2122);
+    background-image: linear-gradient(to right,#446468 ,#354f52,#203031, #283536,#1b2122);
     padding-top: .3rem;
     padding-bottom: .3rem;
     grid-column: span 6;
