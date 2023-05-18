@@ -7,8 +7,8 @@ header, footer{
     padding: .8rem;
     align-items: center;
     color: white;
-    background-color: #283536;
     background: linear-gradient(to right,#446468 ,#354f52,#203031, #283536,#1b2122);
+    background-color: #283536;
     text-align: left;
 
 }
