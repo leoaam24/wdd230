@@ -57,6 +57,8 @@
         background-color: transparent;
     }
 
+
+
     nav ul li {
         padding-right: 2.5rem;
         text-shadow: 1px 1px 2px #eee;
@@ -66,10 +68,9 @@
     nav ul li a {
         line-height: 1;
         border: 1px solid #ffff;
-        font-size: 2rem;
+        font-size: 1.2rem;
         text-align: center;
         border: none;
-        font-weight: bold;
         -webkit-text-stroke: .5px rgba(0, 0, 0, .3);
         color:#ffff;
     }
