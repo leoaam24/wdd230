@@ -9,7 +9,7 @@ header, footer{
     color: white;
     /* background-color: #354f52; */
     background-color: #354f52;
-    background-image: linear-gradient(to right,#446468 ,#354f52, #283536,#1b2122);
+    background-image: linear-gradient(to right,#446468 ,#354f52,#203031, #283536,#1b2122);
     text-align: left;
 
 }
@@ -145,6 +145,10 @@ main {
     flex-direction: column;
 }
 
+.card-6 {
+    display: none;
+}
+
 .spot1, .spot2,.spot3 {
     border: 1px solid rgba(0,0,0,.3);
     padding-bottom: 3rem;
@@ -191,11 +195,18 @@ footer img {
     margin-top: 0;
     margin-bottom: .3rem;
     font-size: .8rem;
+    
 }
 
 .info-2 p{
     font-size: 1rem;
     margin: 1.5rem;
+    
+}
+
+.info-2 p a{
+    color:#eee;
+    text-decoration: none;
 }
 
 
@@ -203,6 +214,7 @@ footer img {
     margin-top:0;
     margin-bottom: .3rem;
     font-size: 1rem;
+    
 }
 
 #info-3 p{
