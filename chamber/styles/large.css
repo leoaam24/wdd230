@@ -3,8 +3,15 @@
         max-width: 100%;
     }
 
-    header{
-        grid-template-columns: repeat(12, .5fr);
+    .header {
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+
+    .banner {
+        grid-column: span 5;
     }
 
     picture {
@@ -26,7 +33,8 @@
     }
 
     .socials {
-        grid-column: 12;
+        justify-content: center;
+        grid-column: 3/4;
     }
 
     #hamburgerBtn {
@@ -34,8 +42,8 @@
     }
 
     .datetime-holder {
-        grid-column: span 12;
-        grid-row: 2;
+        grid-column: span 4;
+        grid-row: 3/4;
     }
 
     #datetime {
@@ -44,34 +52,29 @@
 
 
     #primaryNav {
-        width: 30%;
-        position: absolute;
-        top: 2rem;
-        right: 20rem;
-        flex-direction: row;
+        max-width: 100%;
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
         border: none;
-        padding: 0;
-        background-color: transparent;
+        background: linear-gradient(to right,#446468 ,#354f52,#203031, #283536,#1b2122);
     }
 
 
-
     nav ul li {
-        padding-right: 2.5rem;
-        text-shadow: 1px 1px 2px #eee;
+        padding: 1.2rem;
     }
 
     
     nav ul li a {
         line-height: 1;
+        padding: 1rem;
         border: 1px solid #ffff;
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-align: center;
         border: none;
-        color:#ffff;
+        color: #ffff;
         font-weight: bold;
     }
 
@@ -91,75 +94,108 @@
     main {
         margin: 0 auto;
         width: 95%;
+        display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: repeat(3, 1fr);
+        align-items: baseline;
+        gap: .5rem;
+    }
+
+
+    .card-1 {
+        display: grid;
+        align-items: baseline;
+        grid-column: 2;
+        grid-row: 1 / 3;
+        margin: 0;
+        height: 100%;
+    }
+
+    .card-1 h3{
+        width: 98%;
+    }
+
+    .card-1 img{
+        width: 100%;
+        height: 100%;
+        grid-row: 1 / 3;
     }
 
     
 
-    .card-1 {
-        height: 100%;
-        width: 100%;
-        padding: 0;
-        grid-column: 2;
-        grid-row: 1 / span 2;
-    }
-
-    .card-1 h3, .card-2 h3, .card-3 h3, .card-4 h3, .card-6 h3 {
-        padding: 1rem;
-    }
-
     .card-2 {
-        position: initial;
-        margin-right: 1rem;
+        display: block;
+        align-self: start;
         grid-column: 1;
         grid-row: 1;
-        padding: 0;
-        width: 100%;
+        max-width: 100%;
         height: 100%;
+        position: unset;
+        margin-top: 0;
+        margin-bottom: .5rem;
     }
+
 
 
     .card-3 {
+        display: block;
         position:unset;
+        max-width: 100%;
+        height: 100% ;
         grid-column: 1;
         grid-row: 2; 
         padding: 0;
-        width:100%;
-        height: 100%;
-    }
+        margin-top: 0;
+     }
 
-    .card-4 {
-        grid-column: 2;
-        grid-row: 3;
-        padding: 0;
+     .card-3 img {
         width: 100%;
         height: 100%;
+     }
+
+    .card-4 {
+        margin-top: 0;
+        display: block;
+        grid-column: 2;
+        grid-row: 3;
+        padding: 1rem;
+        height: 100%;
     }
 
+
     .card-5 {
+        display: flex;
         grid-column: 3;
         grid-row: 1 / span 3;
         padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
         width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
     }
 
-    .spot1 , .spot2, .spot3{
+
+    .spot3 {
         display: block;
-        flex: 1 1 auto;
-        width: 100%;
-        height: 100%;
+    }
+
+    .spot-info {
+        padding-bottom: 2rem;
+    }
+    
+    .spot1 img, .spot2 img, .spot3 img{
+        max-width: 100%;
+        height: auto;
+
     }
 
 
     .card-6 {
+        display: block;
         grid-column: 1;
         grid-row: 3;
-        padding: 0;
-        width: 100%;
+        align-self: start;
+        margin-top: 0;
         height: 100%;
     }
 
