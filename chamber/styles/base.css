@@ -253,6 +253,11 @@ text-overflow: ellipsis;
     line-height: .5;
 }
 
+.spot-info {
+    text-align: center;
+    padding: 0;
+}
+
 .card-5 img {
     max-width: 100%;
     height: auto;
@@ -271,9 +276,6 @@ text-overflow: ellipsis;
 .card-6 {
     display: none;
 }
-
-
-
 
 
 
