@@ -205,6 +205,7 @@ text-overflow: ellipsis;
     max-width: 100%;
     height: auto;
     margin: 0 auto;
+    object-fit: cover;
 }
 
 .card-1 .opt-in {
