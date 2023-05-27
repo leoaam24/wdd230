@@ -2,6 +2,8 @@ body {
     max-width: 100%;
 }
 
+  /*--- header ---*/
+
 header, footer{
     width: 100%;
     align-items: center;
@@ -155,6 +157,8 @@ nav ul.open {
     display: block;
 }
 
+  /*--- main ---*/
+
 main {
     display: grid;
     font-family: 'Montserrat', sans-serif;
@@ -162,6 +166,7 @@ main {
     align-items: center;
     justify-items: center;
 }
+
 .card-2, .card-3, .card-4, .card-5, .card-6 {
     background-color: #52796F;
     max-width: 100%;
@@ -179,15 +184,10 @@ main {
     margin: 0 auto;
 }
 
-.cardp{
-white-space: nowrap;
-overflow: hidden;
-text-overflow: ellipsis;
-}
+  /*--- Hero Image ---*/
 
 .card-1{
     position: relative;
-    /* box-sizing: content-box; */
 }
 
 .card-1 h3 {
@@ -201,15 +201,18 @@ text-overflow: ellipsis;
     font-weight: bold;
 }
 
-.card-1 img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
+.card-1 picture.heroimg{
+    width: 100%;
+}
+
+.card-1 picture.heroimg img{
+    width: 100%;
     object-fit: cover;
 }
 
 .card-1 .opt-in {
     position: absolute;
+    cursor: pointer;
     bottom: 1rem;
     right: 1rem;
     background-color: #354F52;
@@ -222,41 +225,76 @@ text-overflow: ellipsis;
 }
 
 
+
+/*--- Events ---*/
+
 .card-2 h3 {
     text-align: center;
-
 }
 
-.cardp{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+#card2p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
+
+
+
+/*--- Weather ---*/
 
 .card-3 {
-    background-color: transparent;
-}
-.card-3 img {
-    max-width: 100%;
-    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
+.weather-info {
+    padding: 1rem;
+    display: flex;
+}
+
+.weather-image img{
+    width: 100%;
+}
+
+.weather-info h4 {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.weather-info-2 h4{
+    text-align: center;
+}
+
+.weather-info-2 {
+    text-align: left;
+}
+
+
+/*--- News Release ---*/
+
+.card-4 h3 {
+    text-align: center;
+}
+
+#card4p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*--- Spotlight ---*/
 
 .card-5 {
     display: flex;
     flex-direction: column;
 }
 
-.card-5 p {
-    font-weight: 600;
-    padding: 0;
-    text-align: center;
-    line-height: .5;
-}
-
 .spot-info {
     text-align: center;
-    padding: 0;
+    font-size: 4vw;
+    font-weight: 600;
 }
 
 .card-5 img {
@@ -274,16 +312,19 @@ text-overflow: ellipsis;
     display: none;
 }
 
+/*--- Join ---*/
+
 .card-6 {
     display: none;
 }
-
 
 
 .active {
     background-color: rgba(0, 0, 0, 0.4);
     color: #eee;
 }
+
+/*--- footer ---*/
 
 footer {
     display: flex;

@@ -1,5 +1,9 @@
 @media only screen and (min-width: 35rem) {
 
+    body {
+        width: 100%;
+    }
+
     .bannerdiv {
         grid-column: 1/5;
     }
@@ -41,7 +45,7 @@
 
     main {
         gap: 0.5rem;
-        align-items: center;
+        align-content: baseline;
         justify-self: center;
     }
 
@@ -53,23 +57,24 @@
     }
 
     .card-1 img{
-        max-width: 100%;
+        width: 100%;
         display: block;
-        height: auto;
     }
 
     .card-2 {
         width: 100%;
-        position: relative;
+        height: 100%;
         padding: 1rem;
     }
 
 
-    .cardp{
+    #card2p{
         white-space: unset;
         overflow: unset;
         text-overflow: unset;
     }
+
+    
 
     .card-3 {
         max-width: 100%;
@@ -81,6 +86,12 @@
     .card-4 {
         grid-column: 1 / span 2;
         grid-row: 2
+    }
+
+    #card4p{
+        white-space: unset;
+        overflow: unset;
+        text-overflow: unset;
     }
     
 
@@ -100,6 +111,11 @@
 
     .card-5 p{
         padding: 0;
+    }
+
+    .spot-info {
+        padding: 1rem;
+        font-size: 2vw;
     }
 
 
@@ -122,6 +138,7 @@
     }
 
     .card-6 p{
+        text-align: center;
         font-size: 1.5rem;
     }
 

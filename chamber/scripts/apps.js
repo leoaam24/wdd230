@@ -59,35 +59,33 @@ if (dayInt === 1 || dayInt === 2){
 }
 
 const card2 = document.querySelector('.card-2');
-const card3 = document.querySelector('.card-3');
 const card4 = document.querySelector('.card-4');
-const card5 = document.querySelector('.card-5');
-const card6 = document.querySelector('.card-6');
-const cardp = document.querySelector('.cardp');
+const card2p = document.querySelector("#card2p");
+const card4p = document.querySelector("#card4p");
 document.addEventListener('DOMContentLoaded', function() {
 	
-	if (cardp.scrollWidth > card2.offsetWidth) {
-	  const seeMoreLink2 = document.createElement('span');
-	  const seeMoreLink4 = document.createElement('span');
-	  seeMoreLink2.className = 'see-more';
-	  seeMoreLink2.textContent = 'See more...';
-	  seeMoreLink4.className = 'see-more';
-	  seeMoreLink4.textContent = 'See more...';
-	
-	  seeMoreLink2.addEventListener('click', function() {
-		card2.style.overflow = 'visible';
-		cardp.style.whiteSpace = 'normal';
-		seeMoreLink2.style.display = 'none';
+	if (card2p.scrollWidth > card2.offsetWidth) {
+		const seeMoreLink2 = document.createElement('span');
+		seeMoreLink2.className = 'see-more';
+		seeMoreLink2.textContent = 'See more...';
+	  	seeMoreLink2.addEventListener('click', function() {
+			card2.style.overflow = 'visible';
+			card2p.style.whiteSpace = 'normal';
+			seeMoreLink2.style.display = 'none';
 	  });
+		card2.appendChild(seeMoreLink2);
+	};
 
-	  seeMoreLink4.addEventListener('click', function() {
-		card4.style.overflow = 'visible';
-		cardp.style.whiteSpace = 'normal';
-		seeMoreLink4.style.display = 'none';
-	  });
-	
-	  card2.appendChild(seeMoreLink2);
-	  card4.appendChild(seeMoreLink4);
-
+	if (card4p.scrollWidth > card4.offsetWidth) {
+		const seeMoreLink4 = document.createElement('span');
+		seeMoreLink4.className = 'see-more';
+		seeMoreLink4.textContent = 'See more...';
+		seeMoreLink4.addEventListener('click', function() {
+			card4.style.overflow = 'visible';
+			card4p.style.whiteSpace = 'normal';
+			seeMoreLink4.style.display = 'none';
+			});
+		card4.appendChild(seeMoreLink4);
 	}
+
   });

@@ -1,7 +1,9 @@
 @media only screen and (min-width: 62.5rem) {
     body {
-        max-width: 100%;
+        max-width: 1920px;
+        max-height: 1080px;
     }
+      /*--- header ---*/
 
     .header {
         grid-template-columns: repeat(4,1fr);
@@ -91,69 +93,92 @@
         border: 2px solid rgba(255,255,255,.5);
     }
 
+    /*--- main ---*/
+
     main {
-        margin: 0 auto;
+        margin: 1% 2% 1% 2%;
         width: 95%;
+        height: 100%;
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        align-items: baseline;
-        gap: .5rem;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 30% 40% 30%;
     }
 
-
+      /*--- hero image ---*/
     .card-1 {
-        display: grid;
-        align-items: baseline;
-        grid-column: 2;
-        grid-row: 1 / 3;
         margin: 0;
         height: 100%;
+        display: block;
+        grid-column: 2 / 3;
+        grid-row: 1/3;
     }
 
     .card-1 h3{
         width: 98%;
     }
 
-    .card-1 img{
-        width: 100%;
-        height: 100%;
+    .card-1 picture.heroimg img{
         object-fit: cover;
-        grid-row: 1 / 3;
+        width: 100%;
+        height: 97.5%;
     }
 
     
-
+      /*--- Events ---*/
     .card-2 {
-        display: block;
-        align-self: start;
+        display: flex;
+        flex-direction: column;
         grid-column: 1;
         grid-row: 1;
-        max-width: 100%;
         height: 100%;
-        position: unset;
-        margin-top: 0;
-        margin-bottom: .5rem;
+        
+    }
+
+    #card2p{
+        display: block;
+        white-space: normal;
+        overflow:scroll;
+        text-overflow: clip;
+        height: 100%;
+    }
+
+
+      /*--- Weather ---*/
+    .card-3 {
+        grid-column: 1;
+        padding: 1rem;
+        grid-row: 2; 
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-3 h3{
+        font-size: 2vw;
+    }
+
+    .weather-info {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        
+    }
+
+    .weather-info picture{
+        display: block;
+        margin: 0 auto;
+    }
+    #temp-value {
+        display: inline;
+    }
+
+    .weather-info h4 {
+        font-size: 1.5vw;
+        margin: 5% auto;
     }
 
 
 
-    .card-3 {
-        display: block;
-        position:unset;
-        max-width: 100%;
-        height: 100% ;
-        grid-column: 1;
-        grid-row: 2; 
-        padding: 0;
-        margin-top: 0;
-     }
-
-     .card-3 img {
-        width: 100%;
-        height: 100%;
-     }
-
+    /*--- News ---*/
     .card-4 {
         margin-top: 0;
         display: block;
@@ -163,34 +188,44 @@
         height: 100%;
     }
 
+    #card4p {
+        display: block;
+        white-space: normal;
+    }
 
+      /*--- Spotlight ---*/
     .card-5 {
-        display: flex;
+        display: block;
         grid-column: 3;
-        grid-row: 1 / span 3;
-        padding: 0;
-        margin-top: 0;
-        margin-bottom: 0;
-        width: 100%;
+        grid-row: 1 / 4;
         height: 100%;
     }
 
-
     .spot3 {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
     }
+
 
     .spot-info {
-        padding-bottom: 2rem;
+        padding: 1rem;
+        font-size: .7vw;
+    }
+
+    picture.spotlight-img {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
     }
     
-    .spot1 img, .spot2 img, .spot3 img{
-        max-width: 100%;
-        height: auto;
-
+    picture.spotlight-img img {
+        width: 100%;
     }
+    
 
-
+      /*--- Join ---*/
     .card-6 {
         display: block;
         grid-column: 1;
@@ -199,6 +234,8 @@
         margin-top: 0;
         height: 100%;
     }
+
+      /*--- footer ---*/
 
     #info-3-row{
         display: flex;
