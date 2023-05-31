@@ -1,0 +1,28 @@
+body {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+body h1{
+    text-align: center;
+}
+
+body picture img{
+    display: block;
+    margin: 1rem auto;
+    
+}
+
+img[data-src] {
+    filter: blur(.2em);
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 1s;
+}
+
+.preloaded {
+    filter: blur(0em);
+}
