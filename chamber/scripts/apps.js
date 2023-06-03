@@ -63,29 +63,72 @@ const card4 = document.querySelector('.card-4');
 const card2p = document.querySelector("#card2p");
 const card4p = document.querySelector("#card4p");
 document.addEventListener('DOMContentLoaded', function() {
+	if (card2p) {
+		if (card2p.scrollWidth > card2.offsetWidth) {
+			const seeMoreLink2 = document.createElement('span');
+			seeMoreLink2.className = 'see-more';
+			seeMoreLink2.textContent = 'See more...';
+			  seeMoreLink2.addEventListener('click', function() {
+				card2.style.overflow = 'visible';
+				card2p.style.whiteSpace = 'normal';
+				seeMoreLink2.style.display = 'none';
+		  });
+			card2.appendChild(seeMoreLink2);
+		};
 	
-	if (card2p.scrollWidth > card2.offsetWidth) {
-		const seeMoreLink2 = document.createElement('span');
-		seeMoreLink2.className = 'see-more';
-		seeMoreLink2.textContent = 'See more...';
-	  	seeMoreLink2.addEventListener('click', function() {
-			card2.style.overflow = 'visible';
-			card2p.style.whiteSpace = 'normal';
-			seeMoreLink2.style.display = 'none';
-	  });
-		card2.appendChild(seeMoreLink2);
-	};
-
-	if (card4p.scrollWidth > card4.offsetWidth) {
-		const seeMoreLink4 = document.createElement('span');
-		seeMoreLink4.className = 'see-more';
-		seeMoreLink4.textContent = 'See more...';
-		seeMoreLink4.addEventListener('click', function() {
-			card4.style.overflow = 'visible';
-			card4p.style.whiteSpace = 'normal';
-			seeMoreLink4.style.display = 'none';
-			});
-		card4.appendChild(seeMoreLink4);
+		if (card4p.scrollWidth > card4.offsetWidth) {
+			const seeMoreLink4 = document.createElement('span');
+			seeMoreLink4.className = 'see-more';
+			seeMoreLink4.textContent = 'See more...';
+			seeMoreLink4.addEventListener('click', function() {
+				card4.style.overflow = 'visible';
+				card4p.style.whiteSpace = 'normal';
+				seeMoreLink4.style.display = 'none';
+				});
+			card4.appendChild(seeMoreLink4);
+		}
 	}
+	
 
   });
+
+  // FOR LAST VISIT 
+  const msToDays = 84600000;
+
+  const visits = document.querySelector(".visits");
+  const visitMessage = document.querySelector('.visit-message');
+  const lastVisit = document.querySelector(".last-visit");
+  const numDays = document.querySelector(".number-days");
+  const dateLastVisit = window.localStorage.getItem("lastVisit");
+  const msDateNow = Date.now();
+  const totalDays = ((msDateNow - dateLastVisit) / msToDays);
+  
+  let numVisits = Number(window.localStorage.getItem("visits-ls"));
+  
+
+  if (numVisits === 0) {
+	visitMessage.textContent = "This is your first time visiting the site!";
+  } else {
+	if (numVisits === 1) {
+		numVisits += 1;
+		document.querySelector(".singular-plural").textContent = "time";
+		document.querySelector(".visits").textContent = "the 2nd";
+	} else {
+		document.querySelector(".singular-plural").textContent = "times";
+		document.querySelector(".visits").textContent = numVisits;
+	}
+  }
+
+  numVisits++;
+
+  localStorage.setItem("visits-ls", numVisits);
+  window.localStorage.setItem("lastVisit", msDateNow);
+
+  numDays.textContent = totalDays.toFixed(0);
+
+  if (totalDays > 1) {
+	document.querySelector(".singular-plural-2").textContent = "days";
+  } else {
+	document.querySelector(".singular-plural-2").textContent = "day";
+  }
+

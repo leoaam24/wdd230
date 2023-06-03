@@ -389,3 +389,27 @@ footer img {
 #info-3-row {
     display: none;
 }
+
+.visit-container{
+    display: block;
+}
+
+/*--- DISCOVER PAGE ---*/
+
+    /*--- main ---*/
+
+
+.discovery-1, .discovery-2, .discovery-3, .discovery-4, .discovery-5 {
+    margin-top: .5rem;
+    background-color: #1b2122;
+    background-image: linear-gradient(to right,#446468 ,#354f52,#203031, #283536,#1b2122)
+}
+
+.discovery-1 img, .discovery-2 img, .discovery-3 img, .discovery-4 img, .discovery-5 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
