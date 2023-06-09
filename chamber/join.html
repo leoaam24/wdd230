@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <meta name="description" content="Chamber of Commerce assignment in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css" media="screen">
+    <link rel="stylesheet" href="styles/large.css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poltawski+Nowy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="bannerdiv">
+            <section class="banner"><h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2></section>
+        </div>
+        <div class="logo-and-name-container">
+        <picture><img src="images/logo-webP.webp" alt="dcci-logo" class="logo"></picture>
+        <section class="headings">
+            <h1>Davao City</h1>
+            <h2>Chamber of Commerce & Industry</h2>
+        </section>
+        </div>
+        <div class="socials">
+        <a href="#"><img src="images/fb.png" alt="fb-logo"></a>
+        <a href="#"><img src="images/linkedin.png" alt="linkedin-logo"></a>
+        </div>
+        <button id="hamburgerBtn">&#9776;</button>
+        <div class="datetime-holder"><span id="datetime">Hi</span></div>
+    </header>
+    <nav>
+        <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html" >Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="form-container">
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top">First Name*<input type="text" id="fname" name="fname" required></label>
+                    <label class="top">Last Name*<input type="text" id="lname" name="lname" required></label>
+                    <label class="top">Position<input type="text" id="position" name="position" pattern="[A-Za-z-\s]*"></label>
+                    <label class="top">Email*<input type="email" id="email" name="email" required></label>
+                    <label class="top">Phone*<input type="tel" id="phone" name="position" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Application</legend>
+                    <label class="top">Business Name*<input type="text" id="business" name="business" pattern="[A-Za-z-\s]" required></label>
+                    <div>Membership Type</div>
+                    <label class="sbs"><input type="radio" id="r1" name="level" value="np">NP (Non-Profit)</label>
+                    <label class="sbs"><input type="radio" id="r2" name="level" value="bronze">Bronze Membership</label>
+                    <label class="sbs"><input type="radio" id="r3" name="level" value="silver">Silver Membership</label>
+                    <label class="sbs"><input type="radio" id="r4" name="level" value="Gold">Gold Membership</label>
+                    <div class="NP-info">
+                        <h4>Cost: PHP 2,500.00 per year</h4>
+                        <h5>Benefits:</h5>
+                        <p>• Discounts on products and services: DCCCII members can often receive discounts on products and services from Chamber partners.</p>
+                        <p>• Access to events: DCCCII members are invited to attend a variety of events, including networking events, educational seminars, and trade shows.</p>
+                        <p>• Representation: DCCCII members have a voice in the Chamber's advocacy work.</p> 
+                        <p>• Networking opportunities: DCCCII members have the opportunity to network with other business leaders in the Davao City community.</p>
+                    </div>
+                    <div class="bronze-info">
+                        <h4>Cost: PHP 7,500.00 per year</h4>
+                        <h5>Benefits:</h5>
+                        <p>• Access to DCCCII's network of business leaders and government officials.</p>
+                        <p>• Discounts on DCCCII's events and training programs.</p>
+                        <p>• Representation on DCCCII's committees and boards.</p> 
+                        <p>• The ability to vote on DCCCII's policies and decisions.</p>
+                        <p>• The ability to use DCCCII's logo and branding materials.</p>
+                    </div> 
+                    <div class="silver-info">
+                        <h4>Cost: PHP 10,000.00 per year</h4>
+                        <h5>Benefits:</h5>
+                        <p>• All Regular Membership benefits.</p>
+                        <p>• A dedicated account manager.</p>
+                        <p>• Priority registration for DCCCII's events and training programs.</p>
+                        <p>• A reserved parking space at DCCCII's events.</p>
+                    </div>    
+                    <div class="gold-info">
+                        <h4>Cost: PHP 20,000.00 per year</h4>
+                        <h5>Benefits:</h5>
+                        <p>• All Regular and Silver Membership benefits.</p>
+                        <p>• A seat on DCCCII's Board of Directors.</p>
+                        <p>• The ability to sponsor DCCCII's events and training programs.</p>
+                        <p>• The ability to name a DCCCII scholarship recipient.</p>
+                    </div>
+                    <label class="top">Description<textarea id="bDescription" name="bDescription"></textarea></label>
+                    <input type="hidden" id="timestamp" name="timestamp">
+                </fieldset>
+                <input type="submit" value="Register My Business" class="submitBtn">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <picture><img src="images/logo-webP.webp" alt="dccci-logo"></picture>
+        <section class="info-1">
+            <h4>Davao City Chamber of Commerce and Industry Inc.</h4>
+            <p>2nd Floor Davao City Chamber of Commerce and Industry Building</p>
+            <p> Bajada, Davao City 8000</p>
+        </section>
+        <div class="info-2">
+            <p>info@davaochamber.com</p>
+            <p>+63 ​(82) 222-1402 / (28) / 226-4433​</p>
+            <p>📍 <a href="https://goo.gl/maps/uYhDoXvdnukvMmBm6">Location Map</a></p>
+        </div>
+        <div id="visit-container">
+            <h3 class="visit-message">You have visited this site for <span class="visits"></span> <span class="singular-plural"></span>!</h3>
+            <h3 class="date-visit">It has been: <span class="number-days"></span> <span class="singular-plural-2"></span> since your last visit.</h3>
+        </div>
+        <hr class="divider">
+        <div id="info-3">
+            &copy; Davao Chamber
+            <h4>Leo Alfred A. Mosquera</h4>
+            <p>WDD 230 Project</p>
+            <p>Last Modification: <span id="lastmodified"></span></p>
+        </div>
+        <div id="info-3-row">
+            &copy;<span id="currentyear"></span> Davao Chamber | Leo Alfred A. Mosquera | WDD 230 Project |<span id="lastmodified2"></span>
+        </div>
+    </footer>
+<script src="scripts/apps.js"></script>
+<script src="scripts/windchill.js"></script>
+<script src="scripts/progressiveLoading.js"></script>
+</body>
+</html>

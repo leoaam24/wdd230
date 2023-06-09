@@ -152,6 +152,7 @@
 
     footer img{
         grid-column: 1/2;
+        height: 10rem;
 
     }
 
@@ -200,6 +201,51 @@
         grid-row: 2;
         grid-column: 1 / 4;
         text-align: center;
+    }
+
+     /*--- DISCOVER PAGE ---*/
+
+    /*--- main ---*/
+
+    .gallery-container {
+        width: 60%;
+    }
+
+
+    .discovery-1 img, .discovery-2 img, .discovery-3 img, .discovery-4 img, .discovery-5 img {
+        object-fit: fill;
+        filter:saturate(50%);
+        background-color: none;
+    }
+
+    .discovery-1 img:hover, .discovery-2 img:hover,.discovery-3 img:hover, .discovery-4 img:hover, .discovery-5 img:hover {
+        filter:saturate(100%);
+        transform: scale(0.9);
+        transition: 1s;
+        border: 2px solid rgba(255, 255, 255, 1);
+    }
+
+    /******* JOIN PAGE *******
+    ****************************/
+
+    /*--- main ---*/
+
+    .NP-info h4, .bronze-info h4, .silver-info h4, .gold-info h4{
+        font-size: 1rem;
+    }
+    
+    .NP-info h5, .bronze-info h5, .silver-info h5, .gold-info h5{
+        font-size: .9rem;
+    }
+    
+    
+    .NP-info p, .bronze-info p, .silver-info p, .gold-info p{
+        display: block;
+        text-align: justify;
+        font-size: .8rem;
+        padding: .5rem;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
 }

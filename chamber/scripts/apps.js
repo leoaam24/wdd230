@@ -132,3 +132,67 @@ document.addEventListener('DOMContentLoaded', function() {
 	document.querySelector(".singular-plural-2").textContent = "day";
   }
 
+
+// Membership Application
+
+
+if (document.querySelector("#form-container")) {
+	const nonprofit = document.querySelector("#r1");
+	const bronze = document.querySelector("#r2");
+	const silver = document.querySelector("#r3");
+	const gold = document.querySelector("#r4");
+	let prevSelection = null;
+
+	
+	nonprofit.addEventListener("change", () => {
+		if (nonprofit.checked) {
+			document.querySelector(".NP-info").style.display = "block";
+			document.querySelector(".bronze-info").style.display = "none";
+			document.querySelector(".silver-info").style.display = "none";
+			document.querySelector(".gold-info").style.display = "none";
+			prevSelection = nonprofit;
+		} 
+	});
+	bronze.addEventListener("change", ()=>{
+		if (bronze.checked) {
+			document.querySelector(".bronze-info").style.display = "block";
+			document.querySelector(".NP-info").style.display = "none";
+			document.querySelector(".silver-info").style.display = "none";
+			document.querySelector(".gold-info").style.display = "none";
+			prevSelection = bronze;
+		}
+	})
+	silver.addEventListener("change", ()=>{
+		if (silver.checked) {
+			document.querySelector(".silver-info").style.display = "block";
+			document.querySelector(".NP-info").style.display = "none";
+			document.querySelector(".bronze-info").style.display = "none";
+			document.querySelector(".gold-info").style.display = "none";
+			prevSelection = silver;
+		}
+	})
+	gold.addEventListener("change", ()=>{
+		if (gold.checked) {
+			document.querySelector(".gold-info").style.display = "block";
+			document.querySelector(".NP-info").style.display = "none";
+			document.querySelector(".bronze-info").style.display = "none";
+			document.querySelector(".silver-info").style.display = "none";
+			prevSelection = gold;
+		}
+	})
+	// Timestamp
+
+	const myForm = document.querySelector("#form-container");
+	
+	if (myForm) {
+		const timestamp = document.querySelector("#timestamp");
+		let currentDate = new Date();
+		currentDate.toISOString();
+		timestamp.value = currentDate;
+		console.log(timestamp.value);
+	}
+
+
+}
+
+

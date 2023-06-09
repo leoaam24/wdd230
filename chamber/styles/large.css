@@ -323,4 +323,41 @@
         border: 2px solid rgba(255, 255, 255, 1);
     }
 
+    /******* JOIN PAGE *******
+    ****************************/
+
+    /*--- main ---*/
+
+    #form-container {
+        grid-column: 1 / span 3;
+        grid-row: 1 /span 3;
+        width: 40%;
+    }
+
+    form label.top{
+        margin-bottom: 2rem;
+    }
+
+    form label.top input {
+        margin-top: .5rem;
+    }
+
+    div h4{
+        font-size: .75rem;
+    }
+
+    div h3{
+        font-size: .50rem;
+    }
+
+    .submitBtn {
+        display: block;
+        width: 50%;
+        margin: 2% auto;
+        
+    }
+
+
+
+
 }

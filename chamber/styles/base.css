@@ -390,13 +390,15 @@ footer img {
     display: none;
 }
 
-.visit-container{
+#visit-container{
     display: block;
+    font-size: .75rem;
 }
 
-/*--- DISCOVER PAGE ---*/
+/******* DISCOVER PAGE *******
+****************************/
 
-    /*--- main ---*/
+/*--- main ---*/
 
 
 .discovery-1, .discovery-2, .discovery-3, .discovery-4, .discovery-5 {
@@ -410,6 +412,111 @@ footer img {
     object-fit: cover;
 }
 
+/******* JOIN PAGE *******
+****************************/
+
+/*--- main ---*/
+
+#form-container {
+    width: 90%;
+}
+
+form fieldset {
+    display: block;
+    color: #1b2122;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: .5rem;
+}
+
+form legend {
+    padding: 0 2%;
+    font-weight: bold;
+    color: #1b2122;
+}
+
+form label.top, form div{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+
+}
+
+form label.top input, textarea {
+    box-sizing: border-box;
+    display: block;
+    padding: .75rem;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    width: 100%;
+    margin-top: 2%;
+}
+
+form label.top input:required {
+    border-left: 4px solid red;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+form label.sbs {
+    display: flex;
+    margin-top: 2%;
+    font-size: 1.1rem;
+}
+
+form label.sbs input {
+    margin-right: 1rem;
+}
+
+form label.sbs{
+    font-style: italic;
+}
+
+.NP-info, .bronze-info, .silver-info, .gold-info {
+    display: none;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    background-color: #e6e6e6;
+}
+
+.NP-info h4, .bronze-info h4, .silver-info h4, .gold-info h4{
+    font-size: .75rem;
+    margin-left: .5rem;
+    margin-bottom: 1rem;
+    margin-top: .75rem;
+}
+
+.NP-info h5, .bronze-info h5, .silver-info h5, .gold-info h5{
+    font-size: .75rem;
+    margin-left: .5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.NP-info p, .bronze-info p, .silver-info p, .gold-info p{
+    display: block;
+    text-align: justify;
+    font-size: .75rem;
+    padding: .5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.submitBtn {
+    margin-top: .5rem;
+    width: 100%;
+    color: #ffff;
+    border: none;
+    background-color: #203031;
+    display: block;
+    padding: .75rem;
+    border-radius: 10px;
+    
+}
 
 
 
