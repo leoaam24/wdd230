@@ -25,12 +25,10 @@
         font-size: 1rem;
     }
 
-
     .datetime-holder {
         padding-top: 10px;
         padding-bottom: 1rem;
     }
-
 
     #datetime {
         padding: .5rem;
@@ -74,7 +72,6 @@
         text-overflow: unset;
     }
 
-    
 
     .card-3 {
         max-width: 100%;
@@ -93,7 +90,6 @@
         overflow: unset;
         text-overflow: unset;
     }
-    
 
     .card-5 {
         grid-column: span 2;
@@ -118,7 +114,6 @@
         font-size: 2vw;
     }
 
-
     .card-6 {
         display: block;
         grid-column: 1 /span 2;
@@ -141,8 +136,6 @@
         text-align: center;
         font-size: 1.5rem;
     }
-
-
 
     footer {
         display: grid;

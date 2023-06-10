@@ -8,8 +8,6 @@ x.onclick=toggleMenu;
 const mediaQuery = window.matchMedia('(min-width: 35rem)');
 const mediaQueryMax = window.matchMedia('(min-widt: 62.5rem');
 
-
-
 // Long hand method ... building day and month names from built-in date methods.
 const daynames = [
 	"Sunday",
@@ -49,7 +47,6 @@ if (mediaQuery.matches) {
 	document.getElementById("info-3").classList.toggle("open");
 	document.querySelector("#lastmodified2").textContent = `Last Modification: ${modified}`;
 }
-
 const promoBanner = document.querySelector("#bannerdiv");
 if (dayInt === 1 || dayInt === 2){
 	console.log("it's working");
@@ -88,62 +85,52 @@ document.addEventListener('DOMContentLoaded', function() {
 			card4.appendChild(seeMoreLink4);
 		}
 	}
-	
-
   });
 
-  // FOR LAST VISIT 
-  const msToDays = 84600000;
+// FOR LAST VISIT 
+const msToDays = 84600000;
+const visits = document.querySelector(".visits");
+const visitMessage = document.querySelector('.visit-message');
+const lastVisit = document.querySelector(".last-visit");
+const numDays = document.querySelector(".number-days");
+const dateLastVisit = window.localStorage.getItem("lastVisit");
+const msDateNow = Date.now();
+const totalDays = ((msDateNow - dateLastVisit) / msToDays);
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
 
-  const visits = document.querySelector(".visits");
-  const visitMessage = document.querySelector('.visit-message');
-  const lastVisit = document.querySelector(".last-visit");
-  const numDays = document.querySelector(".number-days");
-  const dateLastVisit = window.localStorage.getItem("lastVisit");
-  const msDateNow = Date.now();
-  const totalDays = ((msDateNow - dateLastVisit) / msToDays);
-  
-  let numVisits = Number(window.localStorage.getItem("visits-ls"));
-  
+if (numVisits === 0) {
+visitMessage.textContent = "This is your first time visiting the site!";
+} else {
+if (numVisits === 1) {
+	numVisits += 1;
+	document.querySelector(".singular-plural").textContent = "time";
+	document.querySelector(".visits").textContent = "the 2nd";
+} else {
+	document.querySelector(".singular-plural").textContent = "times";
+	document.querySelector(".visits").textContent = numVisits;
+}
+}
 
-  if (numVisits === 0) {
-	visitMessage.textContent = "This is your first time visiting the site!";
-  } else {
-	if (numVisits === 1) {
-		numVisits += 1;
-		document.querySelector(".singular-plural").textContent = "time";
-		document.querySelector(".visits").textContent = "the 2nd";
-	} else {
-		document.querySelector(".singular-plural").textContent = "times";
-		document.querySelector(".visits").textContent = numVisits;
-	}
-  }
+numVisits++;
 
-  numVisits++;
+localStorage.setItem("visits-ls", numVisits);
+window.localStorage.setItem("lastVisit", msDateNow);
 
-  localStorage.setItem("visits-ls", numVisits);
-  window.localStorage.setItem("lastVisit", msDateNow);
+numDays.textContent = totalDays.toFixed(0);
 
-  numDays.textContent = totalDays.toFixed(0);
-
-  if (totalDays > 1) {
-	document.querySelector(".singular-plural-2").textContent = "days";
-  } else {
-	document.querySelector(".singular-plural-2").textContent = "day";
-  }
-
+if (totalDays > 1) {
+document.querySelector(".singular-plural-2").textContent = "days";
+} else {
+document.querySelector(".singular-plural-2").textContent = "day";
+}
 
 // Membership Application
-
-
 if (document.querySelector("#form-container")) {
 	const nonprofit = document.querySelector("#r1");
 	const bronze = document.querySelector("#r2");
 	const silver = document.querySelector("#r3");
 	const gold = document.querySelector("#r4");
 	let prevSelection = null;
-
-	
 	nonprofit.addEventListener("change", () => {
 		if (nonprofit.checked) {
 			document.querySelector(".NP-info").style.display = "block";
@@ -180,8 +167,8 @@ if (document.querySelector("#form-container")) {
 			prevSelection = gold;
 		}
 	})
-	// Timestamp
 
+	// Timestamp
 	const myForm = document.querySelector("#form-container");
 	
 	if (myForm) {
