@@ -204,11 +204,15 @@
         width: 60%;
     }
 
+    .discovery-1, .discovery-2, .discovery-3, .discovery-4, .discovery-5{
+        background-color: transparent;
+    }
+
 
     .discovery-1 img, .discovery-2 img, .discovery-3 img, .discovery-4 img, .discovery-5 img {
         object-fit: fill;
         filter:saturate(50%);
-        background-color: none;
+        
     }
 
     .discovery-1 img:hover, .discovery-2 img:hover,.discovery-3 img:hover, .discovery-4 img:hover, .discovery-5 img:hover {
