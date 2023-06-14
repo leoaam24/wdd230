@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header, footer {
+    margin: 0 auto;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: #555;
+}
+
+.filter-buttons {
+    margin-top: 1rem;
+}
+
+h1 {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+.card h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.card {
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #eee;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.card div {
+    max-width: 100%;
+    box-sizing: border-box;
+    width: 340px;
+    padding: .5rem;
+    margin: .5rem auto;
+    color: white;
+    background-color: rgb(10, 10, 12);
+    border: 1px solid rgba(0,0,0,.5);
+    border-radius: 10px;
+
+}
+
+.card h2 {
+    margin-bottom: 0;
+}
+
+.card div p {
+    font-size: .75rem;
+    line-height: .5rem;
+    display: flex;
+}
+
+.card div p label {
+    flex-shrink: 0;
+    width: 100px;
+    text-align: right;
+}
+
+.card div p span {
+    margin-left: .5rem;
+}
+
+.card img {
+    max-width: 100%;
+    object-fit: cover;
+    box-shadow: 0 10px 10px 5px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 1rem;
+}
