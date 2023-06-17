@@ -499,6 +499,7 @@ form label.sbs{
 
 .submitBtn {
     margin-top: .5rem;
+    cursor: pointer;
     width: 100%;
     color: #ffff;
     border: none;
@@ -508,6 +509,83 @@ form label.sbs{
     border-radius: 10px;
     
 }
+
+/******* DIRECTORY *******
+****************************/
+.directory {
+    display: flex;
+    flex-direction: column;
+}
+
+.directory h2 {
+    margin-top: 0;
+    text-align: center;
+    
+}
+
+.switch-view {
+    text-align:center ;
+    width: 50%;
+    margin: .5rem auto;
+}
+.switch-view button {
+    padding: .75rem;
+}
+
+.switch-view button.grid-view span, .switch-view button.list-view span{
+    float: left;
+    margin-right: .1rem;
+    margin-top: .1rem;
+}
+
+.card {
+    text-align: center;
+    margin: .5rem;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    line-height: 1;
+}
+
+.cards .card img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.card:nth-child(odd){
+    color: white;
+    background: linear-gradient(to right,#446468 ,#354f52,#203031, #283536,#1b2122);
+}
+
+#cards-list-view {
+    display: flex;
+    flex-direction: column;
+}
+
+#cards-list-view .card {
+    margin: 0;
+    box-shadow: none;
+}
+
+#cards-list-view h2 {
+    font-size: 1rem;
+    text-align: left;
+}
+
+#cards-list-view div {
+    text-align: left;
+}
+
+#cards-list-view .card img{
+    display: none;
+}
+
+
+
+
+
+
+
+
 
 
 

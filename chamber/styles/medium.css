@@ -245,4 +245,24 @@
         margin-bottom: 0;
     }
 
+    /******* DIRECTORY *******
+    ****************************/
+
+    .directory {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .switch-view {
+        grid-row: 1;
+        display: block;
+    }
+
+    .cards {
+        margin: .5rem;
+        padding: .75rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+
 }

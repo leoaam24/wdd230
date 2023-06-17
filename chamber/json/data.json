@@ -1,0 +1,75 @@
+[{
+    "businessname" : "Asia United Bank",
+    "address" : "Karpentrade Buiding, Gen. Douglas MacArthur Hwy, Matina, Davao City, 8000 Davao del Sur",
+    "phone" : "(082) 300 2755",
+    "website" : "https://www.aub.com.ph/",
+    "logo" : "https://www.aub.com.ph/resources/images/assets/AUB-Logo-Header.webp",
+    "businesscode": "AUB",
+    "membershiplevel" : "Gold"
+},
+{
+    "businessname" : "Asian Appraisal Company, Inc.",
+    "address" : "2nd Floor, JBO BUILDING, Door 1, 26 Tionko Ave, Davao City, 8000 Davao del Sur",
+    "phone" : "0917 545 9939",
+    "website" : "https://www.asianappraisal.com.ph/",
+    "logo" : "https://www.asianappraisal.com.ph/images/logo_asian_small.jpg",
+    "businesscode": "asian-appraisal-company",
+    "membershiplevel" : "Silver"
+},{
+    "businessname" : "Bank of the Philippine Islands",
+    "address" : "40A C. M. Recto, Poblacion District, Davao City, 8000 Davao del Sur",
+    "phone" : "(082) 226 3941",
+    "website" : "https://www.bpi.com.ph/",
+    "logo" : "https://www.bpi.com.ph/content/dam/bpi/main-navigation/Logo_BPI.svg",
+    "businesscode": "BPI",
+    "membershiplevel" : "Gold"
+},{
+    "businessname" : "Joji Ilagan Career Center Foundation Inc.",
+    "address" : "Gov. Chavez Street Barangay 30-C, Poblacion District, Davao City, 8000 Davao del Sur",
+    "phone" : "(082) 227 5602",
+    "website" : "https://www.jojiilagancareercenter.com/",
+    "logo" : "https://www.jojiilagancareercenter.com/images/joji-ilagan.jpg",
+    "businesscode": "joji-ilagan",
+    "membershiplevel" : "Silver"
+},{
+    "businessname" : "Knights of Online Marketers",
+    "address" : "Talomo, Davao City, 8000 Davao del Sur",
+    "phone" : "0939 235 9988",
+    "website" : "https://knightsofonlinemarketers.com/",
+    "logo" : "https://knightsofonlinemarketers.com/wp-content/uploads/2016/05/4-7-2016-11-14-19-PM.jpg",
+    "businesscode": "knights-of-online-marketers",
+    "membershiplevel" : "Bronze"
+},{
+    "businessname" : "Malayan Insurance",
+    "address" : "Kilometer 6, Lanang, Davao City, 8000 Davao del Sur",
+    "phone" : "(082) 234 1765",
+    "website" : "https://www.malayan.com/",
+    "logo" : "https://www.malayan.com/_ipx/cbimage.webp?f=webp",
+    "businesscode": "malayan-insurance",
+    "membershiplevel" : "Bronze"
+},{
+    "businessname" : "Pearl Farm Beach Resort",
+    "address" : "Brgy, Babak - Samal - Kaputian Rd, Babak, Island Garden City of Samal, 8119 Davao del Norte",
+    "phone" : "(082) 235 1234",
+    "website" : "https://pearlfarmresort.com/",
+    "logo" : "https://b3006915.smushcdn.com/3006915/wp-content/uploads/2023/02/logo.png?lossy=1&strip=1&webp=1",
+    "businesscode": "pearl-farm",
+    "membershiplevel" : "Bronze"
+},{
+    "businessname" : "Davao City Water District",
+    "address" : "DCWD BLDG, KM. 2.5 Gen. Douglas MacArthur Hwy, Matina, Davao City, 8000 Davao del Sur",
+    "phone" : "(082) 235-3293",
+    "website" : "https://web.davao-water.gov.ph/",
+    "logo" : "https://web.davao-water.gov.ph/assets/images/dcwd-logo-dark-lg.svg",
+    "businesscode": "davao-water-district",
+    "membershiplevel" : "Silver"
+},{
+    "businessname" : "The Royal Mandaya Hotel",
+    "address" : "J Jln Palma Gil St, Poblacion District, Davao City, 8000 Davao del Sur",
+    "phone" : "(082) 225 8888",
+    "website" : "http://www.theroyalmandayahotel.com/",
+    "logo" : "http://www.theroyalmandayahotel.com/images/logo.png",
+    "businesscode": "mandaya-hotel",
+    "membershiplevel" : "Gold"
+}
+]
