@@ -467,6 +467,10 @@ form label.sbs{
     font-style: italic;
 }
 
+#business {
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+}
+
 .NP-info, .bronze-info, .silver-info, .gold-info {
     display: none;
     border: 1px solid rgba(0, 0, 0, 0.4);
@@ -509,6 +513,22 @@ form label.sbs{
     border-radius: 10px;
     
 }
+/******* THANK YOU PAGE *******
+****************************/
+
+.thank-you-container {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.thank-you {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
 
 /******* DIRECTORY *******
 ****************************/

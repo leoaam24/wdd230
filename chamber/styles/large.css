@@ -343,6 +343,21 @@
         
     }
 
+    /******* THANK YOU PAGE *******
+    ****************************/
+    .thank-you-container {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 3;
+        width: 50%;
+    }
+    
+    .thank-you {
+        line-height: 1;
+        text-decoration: none;
+        text-emphasis: none;
+    }
+
+
     /******* DIRECTORY *******
     ****************************/
 

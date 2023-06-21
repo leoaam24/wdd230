@@ -180,6 +180,21 @@ if (document.querySelector("#form-container")) {
 	}
 
 
+	const submitBtn = document.querySelector(".submitBtn");
+	const form = document.querySelector("form");
+	const fname = document.querySelector("#fname");
+	const lname = document.querySelector("#lname");
+	const email = document.querySelector("#email");
+	const phone = document.querySelector("#phone");
+	const business = document.querySelector("#business");
+
+	form.addEventListener('submit', (event) => {
+		event.preventDefault();
+		window.location.href = 'thankyou.html';	
+	})
+
+
+
 }
 
 

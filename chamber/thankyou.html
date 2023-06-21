@@ -4,9 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Discover</title>
+    <meta name="description" content="Chamber of Commerce assignment in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css" media="screen">
+    <link rel="stylesheet" href="styles/large.css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poltawski+Nowy&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <div id="bannerdiv">
+            <section class="banner"><h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2></section>
+        </div>
+        <div class="logo-and-name-container">
+        <picture><img src="images/logo-webP.webp" alt="dcci-logo" class="logo"></picture>
+        <section class="headings">
+            <h1>Davao City</h1>
+            <h2>Chamber of Commerce & Industry</h2>
+        </section>
+        </div>
+        <div class="socials">
+        <a href="#"><img src="images/fb.png" alt="fb-logo"></a>
+        <a href="#"><img src="images/linkedin.png" alt="linkedin-logo"></a>
+        </div>
+        <button id="hamburgerBtn">&#9776;</button>
+        <div class="datetime-holder"><span id="datetime">Hi</span></div>
+    </header>
+    <nav>
+        <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html" >Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="thank-you-container">
+            <section class="thank-you">
+                <h2>Your Application Is Under Review!</h2>
+                <p>Thank you for submitting your application. Please wait for 3-10 business days for the result.</p>
+                <p>Our verification department will contact you within these days to confirm some few things.</p>
+                <p>If you have any questions, feel free to contact us to these numbers: +12345678901112 or email us at email@email.com</p>
+                <a href="index.html">&#8592;Back</a> 
+            </section>
+        </div>
+    </main>
+    <footer>
+        <picture><img src="images/logo-webP.webp" alt="dccci-logo"></picture>
+        <section class="info-1">
+            <h4>Davao City Chamber of Commerce and Industry Inc.</h4>
+            <p>2nd Floor Davao City Chamber of Commerce and Industry Building</p>
+            <p> Bajada, Davao City 8000</p>
+        </section>
+        <div class="info-2">
+            <p>info@davaochamber.com</p>
+            <p>+63 ​(82) 222-1402 / (28) / 226-4433​</p>
+            <p>📍 <a href="https://goo.gl/maps/uYhDoXvdnukvMmBm6">Location Map</a></p>
+        </div>
+        <div id="visit-container">
+            <h3 class="visit-message">You have visited this site for <span class="visits"></span> <span class="singular-plural"></span>!</h3>
+            <h3 class="date-visit">It has been: <span class="number-days"></span> <span class="singular-plural-2"></span> since your last visit.</h3>
+        </div>
+        <hr class="divider">
+        <div id="info-3">
+            &copy; Davao Chamber
+            <h4>Leo Alfred A. Mosquera</h4>
+            <p>WDD 230 Project</p>
+            <p>Last Modification: <span id="lastmodified"></span></p>
+        </div>
+        <div id="info-3-row">
+            &copy;<span id="currentyear"></span> Davao Chamber | Leo Alfred A. Mosquera | WDD 230 Project |<span id="lastmodified2"></span>
+        </div>
+    </footer>
+<script src="scripts/apps.js"></script>
+<script src="scripts/windchill.js"></script>
+<script src="scripts/progressiveLoading.js"></script>
 </body>
 </html>
