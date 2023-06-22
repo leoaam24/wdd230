@@ -192,9 +192,6 @@ if (document.querySelector("#form-container")) {
 		event.preventDefault();
 		window.location.href = 'thankyou.html';	
 	})
-
-
-
 }
 
 
