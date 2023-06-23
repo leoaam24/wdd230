@@ -147,18 +147,27 @@
         align-content: center;
     }
 
+    .weather-container {
+        width: 90%;
+        padding: 0;
+
+    }
+
     .card-3 h3{
+        padding-top: 1rem;
         font-size: 2vw;
     }
 
     .weather-info {
         display: flex;
-        padding: 0;
+        flex-direction: row;
+        margin: 0 2rem;
+        padding: .5rem;
     }
-
 
     .weather-info h4 {
         font-size: 2vw;
+        padding: 0;
     }
 
     .weather-info picture.weather-image{
@@ -166,13 +175,26 @@
         margin: 0;
     }
 
+    .weather-info picture.weather-image img{
+        position: relative;
+        bottom: 1rem;
+    }
+
     #weather-condition {
         font-size: 1vw;
     }
 
     .weather-info-2 {
+        margin: 0;
+        padding: 0;
         text-align: center;
         line-height: .2;
+    }
+
+    .weather-info-2 hr {
+        margin: 0;
+        padding: 0; 
+        width: 100%;
     }
 
     .speedandchill {

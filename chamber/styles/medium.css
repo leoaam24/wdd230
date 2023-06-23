@@ -74,17 +74,36 @@
 
 
     .card-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         max-width: 100%;
         height: 100%;
         grid-column: 2;
     }
 
+    .weather-container{
+        padding: 1rem;
+    }
+
+    .weather-container h3 {
+        margin-top: 0;
+        padding-bottom: 1rem;
+    }
+
     .weather-info {
+        margin-top: 1rem;
         padding: 0;
     }
 
     .weather-info h4 {
-        margin: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .weather-info picture.weather-image img {
+        position: relative;
+        bottom: 1rem;
     }
 
     .weather-info hr{
