@@ -142,6 +142,9 @@
         grid-row: 2; 
         width: 100%;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
 
     .card-3 h3{
@@ -150,22 +153,30 @@
 
     .weather-info {
         display: flex;
-        flex-direction: column;
         padding: 0;
-        
     }
 
-    .weather-info picture{
-        display: block;
-        margin: 0 auto;
-    }
-    #temp-value {
-        display: inline;
-    }
 
     .weather-info h4 {
-        font-size: 1.5vw;
-        margin: 5% auto;
+        font-size: 2vw;
+    }
+
+    .weather-info picture.weather-image{
+        padding: 0;
+        margin: 0;
+    }
+
+    #weather-condition {
+        font-size: 1vw;
+    }
+
+    .weather-info-2 {
+        text-align: center;
+        line-height: .2;
+    }
+
+    .speedandchill {
+        font-size: 1rem;
     }
 
     /*--- News ---*/
@@ -185,10 +196,21 @@
 
       /*--- Spotlight ---*/
     .card-5 {
-        display: block;
+        display: flex;
         grid-column: 3;
         grid-row: 1 / 4;
         height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .spotlight-container {
+
+        flex-direction: column;
+    }
+
+    .spot1, .spot2, .spot3 {
+        margin: .5rem auto;
     }
 
     .spot3 {
@@ -215,12 +237,21 @@
     
     /*--- Join ---*/
     .card-6 {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         grid-column: 1;
         grid-row: 3;
         align-self: start;
         margin-top: 0;
         height: 100%;
+    }
+
+    .joinus-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     /*--- footer ---*/

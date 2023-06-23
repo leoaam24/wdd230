@@ -1,4 +1,7 @@
-// select HTML elements in the document
+// FOR Weather API Activity
+const weatherPage = document.querySelector('.weather-page-container');
+
+if (weatherPage){
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
@@ -20,7 +23,7 @@ async function apiFetch() {
     }
   }
   
-  apiFetch();
+apiFetch();
 
 
 function displayResults(weatherData) {
@@ -32,4 +35,8 @@ function displayResults(weatherData) {
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', desc);
   captionDesc.innerHTML = `<strong>${desc}</strong>`;
-    }
+}
+
+}
+
+

@@ -79,6 +79,24 @@
         grid-column: 2;
     }
 
+    .weather-info {
+        padding: 0;
+    }
+
+    .weather-info h4 {
+        margin: 1.5rem;
+    }
+
+    .weather-info hr{
+        margin: 0 auto;
+    }
+
+    .speedandchill {
+        line-height: .5;
+        margin: 0;
+        padding: 1rem;
+    }
+
 
     .card-4 {
         grid-column: 1 / span 2;
@@ -93,11 +111,16 @@
 
     .card-5 {
         grid-column: span 2;
-        display: grid;
+        display: flex;
         grid-template-columns: 1fr 1fr;
         gap: .5rem;
         align-self: center;
         grid-row: 3;
+    }
+
+    .spotlight-container {
+        display: flex;
+        flex-direction: row;
     }
 
     .card-5 img {
@@ -114,6 +137,11 @@
         font-size: 2vw;
     }
 
+    .spot2 {
+        margin-left: 10px;
+    }
+
+
     .card-6 {
         display: block;
         grid-column: 1 /span 2;
@@ -121,7 +149,14 @@
         width: 100%;
     }
 
+    .joinus-container {
+        padding: 1rem;
+        border: 2px solid rgba(255, 255, 255, .5);
+        border-radius: 10px;
+    }
+
     #card-6-button {
+        cursor: pointer;
         color: #fff;
         font-weight: bold;
         border-radius: 2rem;

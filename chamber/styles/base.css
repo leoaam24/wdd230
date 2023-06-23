@@ -238,15 +238,24 @@ main {
 /*--- Weather ---*/
 
 .card-3 {
+    width: 100%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
+.weather-container {
+    margin: 1rem;
+    border-radius: 2rem;
+    background-color: #354F52;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.5);
+}
+
 .weather-info {
     padding: 1rem;
     display: flex;
+    justify-content: center;
 }
 
 .weather-image img{
@@ -258,12 +267,8 @@ main {
     margin-left: 1rem;
 }
 
-.weather-info-2 h4{
-    text-align: center;
-}
-
 .weather-info-2 {
-    text-align: left;
+    text-align: center;
 }
 
 
