@@ -58,7 +58,7 @@ if (tempCtoF <= 50 && windSpeedMph > 3) {
     console.log('true');
     windChill.textContent = `${windChilltoC.toFixed(2)} ºC`;
 } else {
-    windChill.textContent = "Not Available";
+    windChill.textContent = "N/A";
     console.log('false');
 }
 
