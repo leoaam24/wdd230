@@ -116,13 +116,12 @@
         padding: 1rem;
     }
 
-
     .card-4 {
         grid-column: 1 / span 2;
         grid-row: 2
     }
 
-    #card4p{
+    .paragraph-container p{
         white-space: unset;
         overflow: unset;
         text-overflow: unset;
