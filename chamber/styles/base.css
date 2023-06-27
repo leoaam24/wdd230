@@ -585,7 +585,9 @@ form label.sbs{
 }
 
 .cards .card img {
-    object-fit: cover;
+    object-fit: fill;
+    max-width: 380px;
+    max-height: 144px;
     width: 100%;
 }
 

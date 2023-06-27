@@ -64,12 +64,12 @@
     "businesscode": "davao-water-district",
     "membershiplevel" : "Silver"
 },{
-    "businessname" : "The Royal Mandaya Hotel",
-    "address" : "J Jln Palma Gil St, Poblacion District, Davao City, 8000 Davao del Sur",
-    "phone" : "(082) 225 8888",
-    "website" : "http://www.theroyalmandayahotel.com/",
-    "logo" : "http://www.theroyalmandayahotel.com/images/logo.png",
-    "businesscode": "mandaya-hotel",
+    "businessname" : "Seda Abreeza",
+    "address" : "J.P. Laurel Ave, Bajada, Davao City, 8000 Davao del Sur",
+    "phone" : "(082) 244 3000",
+    "website" : "https://abreeza.sedahotels.com/",
+    "logo" : "https://b2524332.smushcdn.com/2524332/wp-content/uploads/sites/14/2021/11/SedaAbreeza-logo1.png?lossy=1&strip=1&webp=1",
+    "businesscode": "seda-abreeza",
     "membershiplevel" : "Gold"
 }
 ]
