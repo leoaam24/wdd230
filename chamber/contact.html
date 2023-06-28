@@ -38,44 +38,47 @@
     <nav>
         <ul id="primaryNav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html" class="active">Discover</a></li>
+            <li><a href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
     </nav>
     <main>
-        <div class="gallery-container">
-            <picture class="discovery-1">
-                <source media="(max-width: 699px)" data-srcset="images/discover-1-small.webp" srcset="images/placeholder-img.png">
-                <source media="(max-width: 899px)" data-srcset="images/discover-1-medium.webp" srcset="images/placeholder-img.png">
-                <source media="(min-width: 900px)" data-srcset="images/discover-1.webp" srcset="images/placeholder-img.png">
-                <img src="images/placeholder-img.png" data-src="images/discover-1.webp" alt="population-demographics" class="progressive-image">
+        <div class="contact-container">
+            <picture>
+                <source media="(max-width: 699px)" data-srcset="images/contact-image-small.webp" srcset="images/placeholder-img.png">
+                <source media="(max-width: 899px)" data-srcset="images/contact-image-medium.webp" srcset="images/placeholder-img.png">
+                <source media="(min-width: 900px)" data-srcset="images/contact-image-large.webp" srcset="images/placeholder-img.png">
+                <img src="images/placeholder-img.png" data-src="images/contact-image-large.webp" alt="population-demographics" class="progressive-image">
             </picture>
-            <picture class="discovery-2">
-                <source media="(max-width: 699px)" data-srcset="images/discover-2-small.webp" srcset="images/placeholder-img.png">
-                <source media="(max-width: 899px)" data-srcset="images/discover-2-medium.webp" srcset="images/placeholder-img.png">
-                <source media="(min-width: 900px)" data-srcset="images/discover-2.webp" srcset="images/placeholder-img.png">
-                <img src="images/placeholder-img.png" data-src="images/discover-2.webp" alt="revenue-demographics" class="progressive-image">
-            </picture>
-            <picture class="discovery-3">
-                <source media="(max-width: 699px)" data-srcset="images/discover-3-small.webp" srcset="images/placeholder-img.png">
-                <source media="(max-width: 899px)" data-srcset="images/discover-3-medium.webp" srcset="images/placeholder-img.png">
-                <source media="(min-width: 900px)" data-srcset="images/discover-3-2.webp" srcset="images/placeholder-img.png">
-                <img src="images/placeholder-img.png" data-src="images/discover-3-2.webp" alt="tourism-demographics" class="progressive-image">
-            </picture>
-            <picture class="discovery-4">
-                <source media="(max-width: 699px)" data-srcset="images/discover-4-small.webp" srcset="images/placeholder-img.png">
-                <source media="(max-width: 899px)" data-srcset="images/discover-4-medium.webp" srcset="images/placeholder-img.png">
-                <source media="(min-width: 900px)" data-srcset="images/discovery-4-option-2.webp" srcset="images/placeholder-img.png">
-                <img src="images/placeholder-img.png" data-src="images/discovery-4-option-2.webp" alt="security-demographics" class="progressive-image">
-            </picture>
-            <picture class="discovery-5">
-                <source media="(max-width: 699px)" data-srcset="images/discovery-5-small.webp" srcset="images/placeholder-img.png">
-                <source media="(max-width: 899px)" data-srcset="images/discovery-5-medium.webp" srcset="images/placeholder-img.png">
-                <source media="(min-width: 900px)" data-srcset="images/discovery-5.webp" srcset="images/placeholder-img.png">
-                <img src="images/placeholder-img.png" data-src="images/discovery-5.webp" alt="education-demographics" class="progressive-image">
-            </picture>
+            <section class="contact-card">
+                <div class="callus">
+                    <h3>Need More Help?</h3>
+                    <p>We are here to assist you in any way we can. If you have further questions, require additional assistance, or need personalized support, please don't hesitate to reach out to our dedicated team. We are committed to providing you with the help you need.</p>
+                    <button class="call-us">Call Us Now</button>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form>
+                        <label for="fname">First Name*</label>
+                        <input type="text" name="fname" id="fname" required>
+                        <label for="lname">Last Name*</label>
+                        <input type="text" name="lname" id="lname" required>
+                        <label for="phone">Phone Number*</label>
+                        <input type="tel" name="phone" id="phone" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="email@email.com">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" maxlength="500" placeholder="Your Message Here..."></textarea>
+                        <input type="submit" id="sendBtn" value="Send Your Message">
+                    </form>
+                </div>
+                <div class="gmaps">
+                    <h3>You Can Visit Us:</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126696.32862471676!2d125.54653640784366!3d7.095801752211942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96c53139f00d1%3A0x6d72f7688a77227f!2sDavao%20City%20Chamber%20of%20Commerce%20and%20Industry%20Inc.!5e0!3m2!1sen!2sph!4v1687931898256!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+                </div>
+            </section>
         </div>
     </main>
     <footer>

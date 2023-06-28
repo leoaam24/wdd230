@@ -474,6 +474,56 @@
         margin-bottom: 20px;
     }
 
+/******* CONTACT PAGE *******
+****************************/
+
+.contact-container {
+    flex-direction: row;
+    grid-column: 1/4;
+}
+
+.contact-container picture {
+    width: 50%;
+}
+
+
+.callus {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.callus button.call-us {
+    width: 80%;
+}
+
+.contact-card .callus h3{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    height: 100%;
+    align-self: center;
+}
+
+.contact-card .contact-form {
+    margin-top: 1.5rem;
+}
+
+.contact-card .contact-form h3 {
+    font-size: 1.5rem;
+}
+
+.contact-card .gmaps h3 {
+    font-size: 1.5rem;
+}
+
+
+
+
 
 
 
