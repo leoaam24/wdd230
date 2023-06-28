@@ -116,11 +116,11 @@
         height: 100%;
         margin: 0;
         padding: 0;
-        
+        text-align: center;
     }
 
     div.hero-image-container h3{
-        display: flex;
+        display: block;
         width: 100%;
         padding: 0;
     }
