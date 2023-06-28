@@ -209,7 +209,7 @@ main {
     object-fit: cover;
 }
 
-.card-1 .opt-in {
+.card-1 div.hero-image-container  button.opt-in {
     position: absolute;
     cursor: pointer;
     bottom: 1rem;
@@ -323,6 +323,10 @@ main {
 
 .spot3 {
     display: none;
+}
+
+.card-5 hr {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /*--- Join ---*/

@@ -54,7 +54,7 @@
 
     }
 
-    .card-1 img{
+    .card-1 div.hero-image-container picture.heroimg img{
         width: 100%;
         display: block;
     }
