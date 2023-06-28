@@ -480,6 +480,7 @@
 .contact-container {
     flex-direction: row;
     grid-column: 1/4;
+    grid-row: 1/4;
 }
 
 .contact-container picture {
