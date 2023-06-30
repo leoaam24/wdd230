@@ -238,6 +238,13 @@ main {
     text-overflow: ellipsis;
 }
 
+.card-2 p a{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
 /*--- Weather ---*/
 
 .card-3 {
