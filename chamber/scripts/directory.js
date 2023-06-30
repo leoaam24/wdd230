@@ -1,7 +1,6 @@
 async function displayBusinessnes() {
     const response = await fetch('json/data.json');
     const data = await response.json();
-    console.table(data);
     buildDirectory(data);
 }
 

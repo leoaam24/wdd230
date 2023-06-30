@@ -16,7 +16,7 @@ if (weatherInfo){
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
-        console.log(data); // this is for testing the call
+        // console.log(data); // this is for testing the call
         displayResults(data);
       } else {
           throw Error(await response.text());
@@ -59,14 +59,7 @@ if (tempCtoF <= 50 && windSpeedMph > 3) {
     windChill.textContent = `${windChilltoC.toFixed(2)} ºC`;
 } else {
     windChill.textContent = "N/A";
-    console.log('false');
 }
-
-
-console.log(windSpeedNumber);
-console.log(tempValueNumber);
-console.log(tempCtoF);
-console.log(windSpeedMph);
 }
 
 }

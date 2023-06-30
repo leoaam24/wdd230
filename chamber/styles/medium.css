@@ -1,322 +1,326 @@
 @media only screen and (min-width: 35rem) {
 
-    body {
-        width: 100%;
-    }
+body {
+    width: 100%;
+}
 
-    .bannerdiv {
-        grid-column: 1/5;
-    }
+.bannerdiv {
+    grid-column: 1/5;
+}
 
-    .logo-and-name-container {
-        display: flex;
-    }
+.logo-and-name-container {
+    display: flex;
+}
 
-    header .logo {
-        max-height: 6rem;
+header .logo {
+    max-height: 6rem;
 
-    }
+}
 
-    .headings h1 {
-        font-size: 2rem;
-    }
+.headings h1 {
+    font-size: 2rem;
+}
 
-    .headings h2{
-        font-size: 1rem;
-    }
+.headings h2{
+    font-size: 1rem;
+}
 
-    .datetime-holder {
-        padding-top: 10px;
-        padding-bottom: 1rem;
-    }
+.datetime-holder {
+    padding-top: 10px;
+    padding-bottom: 1rem;
+}
 
-    #datetime {
-        padding: .5rem;
-        font-size: 1rem;
-    }
-
-
-    #hamburgerBtn {
-        width: 30%;
-        height: 30%;
-    }
-
-    main {
-        gap: 0.5rem;
-        align-content: baseline;
-        justify-self: center;
-    }
-
-    .card-1 {
-        margin-top: 1rem;
-        display: block;
-        grid-column: span 2;
-
-    }
-
-    .card-1 div.hero-image-container picture.heroimg img{
-        width: 100%;
-        display: block;
-    }
-
-    .card-2 {
-        width: 100%;
-        height: 100%;
-        padding: 1rem;
-    }
+#datetime {
+    padding: .5rem;
+    font-size: 1rem;
+}
 
 
-    #card2p{
-        white-space: unset;
-        overflow: unset;
-        text-overflow: unset;
-    }
+#hamburgerBtn {
+    width: 30%;
+    height: 30%;
+}
+
+main {
+    gap: 0.5rem;
+    align-content: baseline;
+    justify-self: center;
+}
+
+.card-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    grid-column: span 2;
+
+}
+
+.card-1 div.hero-image-container picture.heroimg img{
+    width: 100%;
+    display: block;
+}
+
+.card-2 {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
 
 
-    .card-3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
-        height: 100%;
-        grid-column: 2;
-    }
+.card-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+    grid-column: 2;
+}
 
-    .weather-container{
-        padding: 1rem;
-    }
+.weather-container{
+    padding: 1rem;
+}
 
-    .weather-container h3 {
-        margin-top: 0;
-        padding-bottom: 1rem;
-    }
+.weather-container h3 {
+    margin-top: 0;
+    padding-bottom: 1rem;
+}
 
-    .weather-info {
-        margin-top: 1rem;
-        padding: 0;
-    }
+.weather-info {
+    margin-top: 1rem;
+    padding: 0;
+}
 
-    .weather-info h4 {
-        margin: 0;
-        padding: 0;
-    }
+.weather-info h4 {
+    margin: 0;
+    padding: 0;
+}
 
-    .weather-info picture.weather-image img {
-        position: relative;
-        bottom: 1rem;
-    }
+.weather-info picture.weather-image img {
+    position: relative;
+    bottom: 1rem;
+}
 
-    .weather-info hr{
-        margin: 0 auto;
-    }
+.weather-info hr{
+    margin: 0 auto;
+}
 
-    .speedandchill {
-        line-height: .5;
-        margin: 0;
-        padding: 1rem;
-    }
+.speedandchill {
+    line-height: .5;
+    margin: 0;
+    padding: 1rem;
+}
 
-    .card-4 {
-        grid-column: 1 / span 2;
-        grid-row: 2
-    }
+.card-4 {
+    grid-column: 1 / span 2;
+    grid-row: 2
+}
 
-    .paragraph-container p{
-        white-space: unset;
-        overflow: unset;
-        text-overflow: unset;
-    }
+.paragraph-container p{
+    white-space: unset;
+    overflow: unset;
+    text-overflow: unset;
+}
 
-    .card-5 {
-        grid-column: span 2;
-        display: flex;
-        grid-template-columns: 1fr 1fr;
-        gap: .5rem;
-        align-self: center;
-        grid-row: 3;
-    }
+.card-5 {
+    grid-column: span 2;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+    align-self: center;
+    grid-row: 3;
+    width: 100%;
+}
 
-    .spotlight-container {
-        display: flex;
-        flex-direction: row;
-    }
+.spotlight-container {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
 
-    .card-5 img {
-        max-width: 100%;
-        margin: 0 auto;
-    }
+.card-5 picture {
+    display: block;
+    width: 300px;
+    height: 300px;
+}
 
-    .card-5 p{
-        padding: 0;
-    }
+.card-5 img {
+    width: 100%;
+    height: 100%;
+}
 
-    .spot-info {
-        padding: 1rem;
-        font-size: 2vw;
-    }
+.card-5 p{
+    padding: 0;
+}
 
-    .spot2 {
-        margin-left: 10px;
-    }
+.spot-info {
+    padding: 1rem;
+    font-size: 2vw;
+}
 
-
-    .card-6 {
-        display: block;
-        grid-column: 1 /span 2;
-        grid-row: 4;
-        width: 100%;
-    }
-
-    .joinus-container {
-        padding: 1rem;
-        border: 2px solid rgba(255, 255, 255, .5);
-        border-radius: 10px;
-    }
-
-    #card-6-button {
-        cursor: pointer;
-        color: #fff;
-        font-weight: bold;
-        border-radius: 2rem;
-        background-color: #354F52;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        width: 100%;
-        padding: 1rem;
-        margin: 0 auto;
-    }
-
-    .card-6 p{
-        text-align: center;
-        font-size: 1.5rem;
-    }
-
-    footer {
-        display: grid;
-        grid-template-columns: .3fr 1fr .5fr;
-        align-content: center;
-    }
-
-    footer img{
-        grid-column: 1/2;
-        height: 10rem;
-
-    }
-
-    .info-1{
-        padding-left: .5rem;
-        text-align: left;
-    }
-
-    .info-1 h4{
-        font-size: 1rem;
-        padding-right: 5rem;
-    }
-
-    .info-1 p{
-        padding-right: 5rem;
-    }
+.spot2 {
+    margin-left: 10px;
+}
 
 
-    .info-2{
-        margin: 0;
-        padding-right: 3rem;
-        align-items: center;
-        text-align: center;
-    }
+.card-6 {
+    display: block;
+    grid-column: 1 /span 2;
+    grid-row: 4;
+    width: 100%;
+}
 
-    .info-2 p{
-        margin: .2rem;
-        align-items: center;
-        text-align: center;
-    }
+.joinus-container {
+    padding: 1rem;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+}
 
-    .divider {
-        grid-column: span 6;
-    }
+#card-6-button {
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 2rem;
+    background-color: #354F52;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+}
 
-    #info-3.open {
-        display: none;
-    }
+.card-6 p{
+    text-align: center;
+    font-size: 1.5rem;
+}
 
-    #info-3-row{
-        display: grid;
-        grid-column: span 6;
-    }
+footer {
+    display: grid;
+    grid-template-columns: .3fr 1fr .5fr;
+    align-content: center;
+}
+
+footer img{
+    grid-column: 1/2;
+    height: 10rem;
+
+}
+
+.info-1{
+    padding-left: .5rem;
+    text-align: left;
+}
+
+.info-1 h4{
+    font-size: 1rem;
+    padding-right: 5rem;
+}
+
+.info-1 p{
+    padding-right: 5rem;
+}
+
+
+.info-2{
+    margin: 0;
+    padding-right: 3rem;
+    align-items: center;
+    text-align: center;
+}
+
+.info-2 p{
+    margin: .2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.divider {
+    grid-column: span 6;
+}
+
+#info-3.open {
+    display: none;
+}
+
+#info-3-row{
+    display: grid;
+    grid-column: span 6;
+}
+
+#visit-container{
+    grid-row: 2;
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+    /*--- DISCOVER PAGE ---*/
+
+/*--- main ---*/
+
+.gallery-container {
+    width: 60%;
+}
+
+.discovery-1, .discovery-2, .discovery-3, .discovery-4, .discovery-5{
+    background-color: transparent;
+}
+
+
+.discovery-1 img, .discovery-2 img, .discovery-3 img, .discovery-4 img, .discovery-5 img {
+    object-fit: fill;
+    filter:saturate(50%);
     
-    #visit-container{
-        grid-row: 2;
-        grid-column: 1 / 4;
-        text-align: center;
-    }
+}
 
-     /*--- DISCOVER PAGE ---*/
+.discovery-1 img:hover, .discovery-2 img:hover,.discovery-3 img:hover, .discovery-4 img:hover, .discovery-5 img:hover {
+    filter:saturate(100%);
+    transform: scale(0.9);
+    transition: 1s;
+    border: 2px solid rgba(255, 255, 255, 1);
+}
 
-    /*--- main ---*/
+/******* JOIN PAGE *******
+****************************/
 
-    .gallery-container {
-        width: 60%;
-    }
+/*--- main ---*/
 
-    .discovery-1, .discovery-2, .discovery-3, .discovery-4, .discovery-5{
-        background-color: transparent;
-    }
+.NP-info h4, .bronze-info h4, .silver-info h4, .gold-info h4{
+    font-size: 1rem;
+}
+
+.NP-info h5, .bronze-info h5, .silver-info h5, .gold-info h5{
+    font-size: .9rem;
+}
 
 
-    .discovery-1 img, .discovery-2 img, .discovery-3 img, .discovery-4 img, .discovery-5 img {
-        object-fit: fill;
-        filter:saturate(50%);
-        
-    }
+.NP-info p, .bronze-info p, .silver-info p, .gold-info p{
+    display: block;
+    text-align: justify;
+    font-size: .8rem;
+    padding: .5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
-    .discovery-1 img:hover, .discovery-2 img:hover,.discovery-3 img:hover, .discovery-4 img:hover, .discovery-5 img:hover {
-        filter:saturate(100%);
-        transform: scale(0.9);
-        transition: 1s;
-        border: 2px solid rgba(255, 255, 255, 1);
-    }
+/******* DIRECTORY *******
+****************************/
 
-    /******* JOIN PAGE *******
-    ****************************/
+.directory {
+    display: flex;
+    flex-direction: column;
+}
 
-    /*--- main ---*/
+.switch-view {
+    grid-row: 1;
+    display: block;
+}
 
-    .NP-info h4, .bronze-info h4, .silver-info h4, .gold-info h4{
-        font-size: 1rem;
-    }
-    
-    .NP-info h5, .bronze-info h5, .silver-info h5, .gold-info h5{
-        font-size: .9rem;
-    }
-    
-    
-    .NP-info p, .bronze-info p, .silver-info p, .gold-info p{
-        display: block;
-        text-align: justify;
-        font-size: .8rem;
-        padding: .5rem;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    /******* DIRECTORY *******
-    ****************************/
-
-    .directory {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .switch-view {
-        grid-row: 1;
-        display: block;
-    }
-
-    .cards {
-        margin: .5rem;
-        padding: .75rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    }
+.cards {
+    margin: .5rem;
+    padding: .75rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
 
 /******* CONTACT PAGE *******
 ****************************/
@@ -334,6 +338,4 @@
     width: 80%;
     align-self: center;
 }
-
-
 }

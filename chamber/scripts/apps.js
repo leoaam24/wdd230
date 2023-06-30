@@ -176,8 +176,7 @@ if (document.querySelector("#form-container")) {
 		let currentDate = new Date();
 		currentDate.toISOString();
 		timestamp.value = currentDate;
-		console.log(timestamp.value);
-	}
+	}	
 
 
 	const submitBtn = document.querySelector(".submitBtn");
@@ -193,5 +192,123 @@ if (document.querySelector("#form-container")) {
 		window.location.href = 'thankyou.html';	
 	})
 }
+
+
+// SPOTLIGHT RANDOMIZER
+async function displaySpotLight() {
+    const response = await fetch('json/data.json');
+    const data = await response.json();
+	rebuildSpotLight(data);
+}
+
+if (document.querySelector('.card-5')) {
+	displaySpotLight();
+}
+
+
+function rebuildSpotLight(Businessesinfo) {
+	let spotLightList = [];
+	Businessesinfo.forEach ((Business) => {
+		const businessname = Business.businessname;
+		const address = Business.address;
+		const phone = Business.phone;
+		const siteAddress = Business.website;
+		const logo = Business.logo;
+		const membership = Business.membershiplevel;
+		const bcode = Business.businesscode;
+		if (membership === 'Gold' || membership === 'Silver') {
+			if (!spotLightList.some(obj => obj.name === businessname)) {
+					let newObject = {name: businessname, logo: logo, bcode: bcode, membership:membership, phone: phone};
+					spotLightList.push(newObject);
+				}
+			}
+		})
+	const selectedBusiness1 = pickRandomBusiness(spotLightList);
+	const jsonbusiness1 = JSON.stringify(selectedBusiness1);
+	let selectedBusiness2 = pickRandomBusiness(spotLightList);
+	const jsonbusiness2 = JSON.stringify(selectedBusiness2);
+	let selectedBusiness3 = pickRandomBusiness(spotLightList);
+	const jsonbusiness3 = JSON.stringify(selectedBusiness3);
+	if (jsonbusiness2 === jsonbusiness1) {
+		selectedBusiness2 = pickRandomBusiness(spotLightList);
+	}
+	if (jsonbusiness3 === jsonbusiness2 || jsonbusiness3 === jsonbusiness1){
+		selectedBusiness3 = pickRandomBusiness(spotLightList);
+	}
+
+	buildSpot1(selectedBusiness1);
+	buildSpot2(selectedBusiness2);
+	buildSpot3(selectedBusiness3);
+
+	
+	}
+	
+function pickRandomBusiness(businessArray) {
+	const randomIndex = Math.floor(Math.random() * businessArray.length);
+	return businessArray[randomIndex];
+}
+
+function buildSpot1(spot1){
+	const pictureElement = document.querySelector('.spotlight-img1');
+	const sourceElements = pictureElement.querySelectorAll('source');
+	const spotlightimage = document.querySelector('#spotlight1image');
+	const bname1 = document.querySelector('#bname1');
+	const bphone1 = document.querySelector('#bphone1');
+
+	sourceElements.forEach((sourceElement)=> {
+		sourceElement.remove();
+	})
+	spotlightimage.setAttribute('src', spot1.logo);
+	spotlightimage.setAttribute('alt', spot1.bcode);
+	bname1.textContent = spot1.name;
+	bphone1.textContent = spot1.phone;
+}
+
+function buildSpot2(spot2){
+	const pictureElement = document.querySelector('.spotlight-img2');
+	const sourceElements = pictureElement.querySelectorAll('source');
+	const spotlightimage = document.querySelector('#spotlight2image');
+	const bname2 = document.querySelector('#bname2');
+	const bphone2 = document.querySelector('#bphone2');
+
+	sourceElements.forEach((sourceElement) => {
+		sourceElement.remove();
+	})
+
+	spotlightimage.setAttribute('src', spot2.logo);
+	spotlightimage.setAttribute('alt', spot2.bcode);
+	bname2.textContent = spot2.name;
+	bphone2.textContent = spot2.phone;
+}
+
+function buildSpot3(spot3){
+	const pictureElement = document.querySelector('.spotlight-img3');
+	const sourceElements = pictureElement.querySelectorAll('source');
+	const spotlightimage = document.querySelector('#spotlight3image');
+	const bname3 = document.querySelector('#bname3');
+	const bphone3 = document.querySelector('#bphone3');
+
+	sourceElements.forEach((sourceElement) => {
+		sourceElement.remove();
+	})
+
+	spotlightimage.setAttribute('src', spot3.logo);
+	spotlightimage.setAttribute('alt', spot3.bcode);
+	bname3.textContent = spot3.name;
+	bphone3.textContent = spot3.phone;
+}
+
+if (document.querySelector('.contact-form')){
+	const sendBtn = document.querySelector('#sendBtn');
+	sendBtn.addEventListener('submit', () => {
+		alert('Message Sent');
+	})
+}
+
+
+
+
+
+
 
 
