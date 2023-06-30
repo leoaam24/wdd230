@@ -259,7 +259,7 @@ function buildSpot1(spot1){
 		sourceElement.remove();
 	})
 	spotlightimage.setAttribute('src', spot1.logo);
-	spotlightimage.setAttribute('alt', spot1.bcode);
+	spotlightimage.setAttribute('alt', `${spot1.bcode}-logo`);
 	bname1.textContent = spot1.name;
 	bphone1.textContent = spot1.phone;
 }
@@ -276,7 +276,7 @@ function buildSpot2(spot2){
 	})
 
 	spotlightimage.setAttribute('src', spot2.logo);
-	spotlightimage.setAttribute('alt', spot2.bcode);
+	spotlightimage.setAttribute('alt', `${spot2.bcode}-logo`);
 	bname2.textContent = spot2.name;
 	bphone2.textContent = spot2.phone;
 }
@@ -293,7 +293,7 @@ function buildSpot3(spot3){
 	})
 
 	spotlightimage.setAttribute('src', spot3.logo);
-	spotlightimage.setAttribute('alt', spot3.bcode);
+	spotlightimage.setAttribute('alt', `${spot3.bcode}-logo`);
 	bname3.textContent = spot3.name;
 	bphone3.textContent = spot3.phone;
 }

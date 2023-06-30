@@ -331,6 +331,9 @@ main {
     font-weight: 600;
 }
 
+#bname1, #bname2, #bname3 {
+    font-weight: bold;
+}
 
 .spot1, .spot2, .spot3 {
     margin-bottom: 1rem;
@@ -425,6 +428,10 @@ footer img {
 #visit-container{
     display: block;
     font-size: .75rem;
+}
+
+#visit-container h3 {
+    font-size: 1rem;
 }
 
 /******* DISCOVER PAGE *******
