@@ -223,29 +223,32 @@ function rebuildSpotLight(Businessesinfo) {
 				}
 			}
 		})
-	const selectedBusiness1 = pickRandomBusiness(spotLightList);
-	const jsonbusiness1 = JSON.stringify(selectedBusiness1);
-	let selectedBusiness2 = pickRandomBusiness(spotLightList);
-	const jsonbusiness2 = JSON.stringify(selectedBusiness2);
-	let selectedBusiness3 = pickRandomBusiness(spotLightList);
-	const jsonbusiness3 = JSON.stringify(selectedBusiness3);
-	if (jsonbusiness2 === jsonbusiness1) {
-		selectedBusiness2 = pickRandomBusiness(spotLightList);
-	}
-	if (jsonbusiness3 === jsonbusiness2 || jsonbusiness3 === jsonbusiness1){
-		selectedBusiness3 = pickRandomBusiness(spotLightList);
-	}
+	
+	let index1 = RandomNumber(spotLightList);
+	let index2 = RandomNumber(spotLightList);
+	let index3 = RandomNumber(spotLightList);
 
+	const selectedBusiness1 = spotLightList[index1];
+	while (index2 === index1 || index2 === index3) {
+		index2 = RandomNumber(spotLightList);
+	} 
+	const selectedBusiness2 = spotLightList[index2];
+	while (index3 === index2 || index3 === index1) {
+		index3 = RandomNumber(spotLightList);
+	}
+	const selectedBusiness3 = spotLightList[index3];
+	
 	buildSpot1(selectedBusiness1);
 	buildSpot2(selectedBusiness2);
 	buildSpot3(selectedBusiness3);
 
 	
+	
 	}
 	
-function pickRandomBusiness(businessArray) {
+function RandomNumber(businessArray) {
 	const randomIndex = Math.floor(Math.random() * businessArray.length);
-	return businessArray[randomIndex];
+	return randomIndex;
 }
 
 function buildSpot1(spot1){
