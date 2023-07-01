@@ -237,7 +237,7 @@ function rebuildSpotLight(Businessesinfo) {
 		index3 = RandomNumber(spotLightList);
 	}
 	const selectedBusiness3 = spotLightList[index3];
-	
+
 	buildSpot1(selectedBusiness1);
 	buildSpot2(selectedBusiness2);
 	buildSpot3(selectedBusiness3);
@@ -302,8 +302,8 @@ function buildSpot3(spot3){
 }
 
 if (document.querySelector('.contact-form')){
-	const sendBtn = document.querySelector('#sendBtn');
-	sendBtn.addEventListener('submit', () => {
+	const contactForm = document.querySelector('.contact-form-main');
+	contactForm.addEventListener('submit', () => {
 		alert('Message Sent');
 	})
 }

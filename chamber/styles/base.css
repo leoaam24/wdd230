@@ -682,6 +682,7 @@ form label.sbs{
     border: 1px dashed rgba(0, 0, 0, 0.4);
     padding: 1rem;
     box-shadow: 0px 0px 5px 2px;
+    border-radius: 20px;
 }
 
 .callus .call-us {
@@ -731,14 +732,24 @@ form label.sbs{
     height: 150px;
 }
 
+.contact-form-main {
+    background-color: #555;
+    color: white;
+    border-radius: 10px;
+}
+
+#message {
+    margin-top: 2px;
+}
+
 #sendBtn {
     display: flex;
     justify-content: center;
     cursor: pointer;
     margin-top: .5rem;
     border-radius: 10px;
-    color: white;
-    background-color: #203031;
+    color: #203031;
+    background-color: #84A98C;
     border: none;
     padding: .5rem;
 }
