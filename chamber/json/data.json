@@ -56,12 +56,12 @@
     "businesscode": "pearl-farm",
     "membershiplevel" : "Bronze"
 },{
-    "businessname" : "Davao City Water District",
-    "address" : "DCWD BLDG, KM. 2.5 Gen. Douglas MacArthur Hwy, Matina, Davao City, 8000 Davao del Sur",
-    "phone" : "(082) 235-3293",
-    "website" : "https://web.davao-water.gov.ph/",
-    "logo" : "https://web.davao-water.gov.ph/assets/images/dcwd-logo-dark-lg.svg",
-    "businesscode": "davao-water-district",
+    "businessname" : "MAPECON Phils Inc",
+    "address" : "MAPECON Bldg. Purok 10 Juario St., Nacilla Village, Ma-a, Davao City",
+    "phone" : "(082) 282 0600",
+    "website" : "https://mapecon.com/davao/",
+    "logo" : "https://mapecon.com/wp-content/uploads/2022/03/MAPECON-Logo-1.png",
+    "businesscode": "mapecon-phils",
     "membershiplevel" : "Silver"
 },{
     "businessname" : "Seda Abreeza",
