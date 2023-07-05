@@ -236,7 +236,7 @@ section.card-1 div.hero-image-container picture.heroimg img{
 }
 
 .card-4 p {
-    line-height: 1.3;
+    line-height: 1.2;
     font-size: 1.4rem;
 }
 
@@ -288,6 +288,7 @@ section.card-1 div.hero-image-container picture.heroimg img{
 }
 
 #spotlight1image, #spotlight2image, #spotlight3image {
+    padding-top: .5rem;
     width: 90%;
 }
 
