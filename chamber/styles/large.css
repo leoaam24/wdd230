@@ -502,6 +502,10 @@ div h3{
     grid-row: 1/4;
 }
 
+.contact-card {
+    margin-right: 10rem;
+}
+
 .callus {
     text-align: center;
     display: flex;
