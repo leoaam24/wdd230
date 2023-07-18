@@ -443,6 +443,10 @@ footer img {
     background-image: linear-gradient(to right,#446468 ,#354f52,#203031, #283536,#1b2122)
 }
 
+.discovery-1-details, .discovery-2-details, .discovery-3-details, .discovery-4-details, .discovery-5-details {
+    display: none;
+}
+
 .discovery-1 img, .discovery-2 img, .discovery-3 img, .discovery-4 img, .discovery-5 img {
     width: 100%;
     object-fit: cover;

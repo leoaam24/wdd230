@@ -1,0 +1,302 @@
+@media only screen and (min-width:1080px) {
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*******HEADER************
+*************************/
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .4fr 1fr;
+    margin-bottom: 1rem;
+    gap: .5rem;
+}
+
+picture.company-logo img{
+    width: 200px;
+}
+
+#mySideNav {
+    grid-column: 2;
+    grid-row: 2;
+    position: unset;
+    display: flex;
+    justify-content: flex-end;
+    justify-self: flex-end;
+    width: 100%;
+    margin-left: 50%;
+    background-color: transparent;
+    overflow: hidden;
+ }
+
+.innernav {
+    background-color: #384341;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    box-shadow: 5px 5px 4px 2px rgba(0,0,0,.5);
+}
+
+.mainnav {
+    justify-self: center;
+}
+
+.innernav ul{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+ }
+
+.innernav ul li {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.innernav ul li a{
+    width: 100%;
+    display: block;
+    padding:0;
+    align-self: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    padding: 2rem;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.innernav ul li:hover {
+    background-color: transparent;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width:unset;
+}
+
+.innernav ul li:hover {
+    border: 1px solid rgba(255,255,255,0.5);
+    border-top-color: transparent;
+    height: unset;
+}
+
+.innernav ul li:hover > a {
+    color: #ffff;
+    height: unset;
+}
+
+.innernav hr {
+    display: none;
+ }
+
+.sidenav p {
+    display: none;
+}
+
+ .socialsinnernav {
+    display: none;
+ }
+
+ .socialsicon {
+    grid-row: 1;
+    display: block;
+    position: absolute;
+    top: 0;
+ }
+
+ .socialsinnernav {
+    margin: 0;
+    padding: 0;
+ }
+
+ .socialsmainnav {
+    display: flex;
+    align-items: center;
+    margin-top: .5rem;
+    margin-bottom: 0;
+ }
+
+ .socialsmainnav li {
+    height: 10%;
+    padding-bottom: 0;
+    display: flex;
+ }
+
+ .socialsmainnav li a {
+    display: flex;
+    padding-bottom: 0;
+    margin-bottom: 0;
+ }
+
+
+ .socialsicon ul li a img {
+    display: block;
+    width: 30px;
+ }
+
+ .active {
+    border: 1px solid rgba(255,255,255,0.5);
+    border-top: transparent;
+    box-shadow: 0px 0px 1px 1px #ffff;
+    background-color: rgba(0,0,0,0.2);
+}
+
+/*******MAIN*************
+*************************/
+.weather-card {
+    width: 15%;
+}
+
+.close-weather-card {
+    width: 2%;
+}
+
+.close-weather {
+    margin-left: .5rem;
+}
+
+
+.open-weather-card {
+    width: 3%;
+}
+
+#forecast span p {
+    font-size: 1rem;
+}
+
+
+.hero-container {
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 5rem;
+}
+.hero-image img{
+    object-fit: fill;
+}
+
+.hero-message {
+    width: 50%;
+}
+
+.hero-message h1 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.hero-message p {
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+
+#freshButton {
+    width: 80%;
+    margin: 1rem 0;
+    align-self: flex-start;
+}
+
+.order-counter {
+    position: relative;
+    top: 4rem;
+    left: 25rem;
+}
+
+#orderCount {
+    font-size: 1.5rem;
+}
+
+/*SLIDESHOW*/
+.picslide-container {
+    padding: .5rem;
+}
+
+.slide{
+    padding: .5rem;
+
+}
+.prev, .next {
+    display: none;
+}
+
+.dots {
+    display: none;
+}
+
+/*******FRESH PAGE*******
+*************************/
+
+.order-form-container {
+    display: block;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-info .fruit-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#orderButton {
+    display: block;
+    margin-top: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*******SUCCESS PAGE*****
+*************************/
+
+.success-container {
+    display: block;
+    width: 50%;
+    margin: 2rem auto;
+}
+
+/*******ABOUTUS PAGE*******
+***************************/
+.about-us {
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+}
+
+div.contact-info-container {
+    display: block;
+    justify-self: center;
+    width: 70%;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.location-container {
+    position: relative;
+    top: 1rem;
+    right: 70%;
+    margin-bottom: 1rem;
+}
+
+.hours p {
+    text-align: left;
+}
+
+
+
+
+
+
+}

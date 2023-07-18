@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods Home</title>
+    <meta name="description" content="Bountiful Foods Website assignment in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet" media="screen">
+    <link href="styles/large.css" rel="stylesheet" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <a href="index.html"><picture class="company-logo">
+            <source media="(max-width: 699px)" srcset="images/company-logo-small.webp">
+            <source media="(max-width: 1079px)" srcset="images/company-logo-medium.webp">
+            <source media="(min-width: 1080px)" srcset="images/company-logo-large.webp">
+            <img src="images/company-logo-large.webp" alt="bountiful-foods-logo" loading="lazy">
+        </picture></a>
+        <button id="navButtonOpen" class="navbutton">&#9776;</button>
+        <div class="sidenavbackground"></div>
+        <button id="navButtonClose" class="navbutton">X</button>
+        <div id="mySideNav" class="sidenav">
+            <nav class="innernav">
+                <ul class="mainnav">
+                    <li class="active"><a href="index.html" class="active2">Home</a></li>
+                    <li><a href="freshpage.html">Fresh</a></li>
+                    <li><a href="aboutus.html"><span>About Us</span></a></li>
+                </ul>   
+                <hr>    
+            </nav>
+            <p>Socials</p>
+            <nav class="socialsinnernav">
+                <ul class="socialsmainnav">
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.pinterest.com/" target="_blank">Pinterest</a></li>
+                </ul> 
+            </nav>
+            <nav class="socialsicon">
+                <ul class="socialsmainnav">
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="images/FB-Logo.webp" alt="fb-logo" loading="lazy"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="images/Insta-Logo.webp" alt="instagram-logo" loading="lazy"></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><img src="images/twitter-logo.webp" alt="twitter-logo" loading="lazy"></a></li>
+                    <li><a href="https://www.pinterest.com/" target="_blank"><img src="images/pinterest-logo.webp" alt="pinterest-logo" loading="lazy"></a></li>
+                </ul> 
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="weather-info">
+                <div class="weather-container">
+                    <div class="weather-card-background"></div>
+                    <section class="weather-card">
+                        <h2><span id="temp-value"></span> ºC</h2>
+                        <picture class="weather-image">
+                                <img id="weatherImg" src="images/palceholder-small.webp" alt="weather-placeholder">
+                        </picture>
+                        <span id="weather-condition"></span>
+                        <span id="humidity"></span>
+                        <p class="caption">Forecast:</p>
+                        <div id="forecast">
+                        </div>
+                    </section>
+                    <div class="close-weather-card">
+                        <a class="close-weather">&#10094;</a>
+                    </div>
+                </div>
+                <div class="open-weather-card">
+                    <a class="open-weather">&#10095;</a>
+                </div>
+            </div>
+            <div class="hero-container">
+                <picture class="hero-image">
+                    <source media="(max-width: 599px)" srcset="images/Hero-image-small.webp">
+                    <source media="(max-width: 799px)" srcset="images/Hero-image-medium.webp">
+                    <source media="(min-width: 800px)" srcset="images/Hero-image-large.webp">
+                    <img src="images/Hero-image-large.webp" alt="organicfood-images" loading="lazy">
+                </picture>
+                <section class="hero-message">
+                    <h1>Sun-Kissed Delights</h1>
+                    <p>Discover the vibrant essence of Carlsbad, a paradise of sun-kissed beaches, exhilarating golf courses, and captivating family adventures. Amidst this scenic wonderland, Bountiful Foods invites you to experience a refreshing twist with our organic food drinks. Savor the natural goodness and invigorating flavors as you explore the Legoland California theme park, unwind amidst the breathtaking Flower Fields of Carlsbad Ranch, or embrace the tranquility of the Agua Hedionda Lagoon. Fuel your body with the nourishing power of our organic beverages, crafted to enhance your enjoyment of this remarkable destination. Embrace the bountiful flavors of Carlsbad and let Bountiful Foods be your trusted companion on this delightful journey of taste and discovery.</p>
+                    <button id="freshButton" class="freshbutton">Customize Your Drink Mix Now!</button>
+                </section>
+                <section class="order-counter">
+                    <h3 id="orderCount">0</h3>
+                </section>
+            </div>
+            <div class="picslide-container">
+                <div class="buttons-images">
+                    <a class="prev">&#10094;</a>
+                    <div class="slideshow-container">
+                        <div class="slide fade">
+                        <picture class="slide-image">
+                            <source media="(max-width:599px)" srcset="images/slide1-small.webp">
+                            <source media="(max-width:799px)" srcset="images/slide1-medium.webp">
+                            <source media="(min-width:800px)" srcset="images/slide1-large.webp">
+                            <img src="images/slide1-small.webp" alt="organicfood-image" loading="lazy">
+                        </picture>
+                        <div class="slide-text-bg">
+                            <section class="text-container">
+                                <h3>Aquarium of the Pacific</h3>
+                                <p>is a world-renowned aquarium that features over 11,000 marine animals from the Pacific Ocean. The aquarium is home to a number of exhibits, including the Shark Lagoon, the Penguin Encounter, and the Tropical Reef. Aquarium of the Pacific is a great place to learn about the marine life of the Pacific Ocean.</p>
+                            </section>
+                        </div>
+                        </div>
+                        <div class="slide fade">
+                            <picture class="slide-image">
+                                <source media="(max-width:599px)" srcset="images/slide2-small.webp">
+                                <source media="(max-width:799px)" srcset="images/slide2-medium.webp">
+                                <source media="(min-width:800px)" srcset="images/slide2-large.webp">
+                                <img src="images/slide2-small.webp" alt="deliveryman-cartoon-image" loading="lazy">
+                            </picture>
+                            <div class="slide-text-bg">
+                                <section class="text-container">
+                                    <h3>The Gardens on El Camino Real</h3>
+                                    <p>a collection of 12 themed gardens, including a Japanese garden, a rose garden, and a cactus garden. The gardens are a popular spot for a stroll, a picnic, or simply to enjoy the beauty of nature.</p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="slide fade">
+                            <picture class="slide-image">
+                                <source media="(max-width:599px)" srcset="images/slide3-small.webp">
+                                <source media="(max-width:799px)" srcset="images/slide3-medium.webp">
+                                <source media="(min-width:800px)" srcset="images/slide3-large.webp">
+                                <img src="images/slide3-small.webp" alt="instore-cartoon-image" loading="lazy">
+                            </picture>
+                            <div class="slide-text-bg">
+                                <section class="text-container">
+                                    <h3>The Flower Fields of Carlsbad Ranch</h3>
+                                    <p>a 50-acre oceanfront meadow that bursts into bloom with beautiful flowers every spring. The fields are home to over 50 different types of flowers, including ranunculus, tulips, irises, and poppies. The Flower Fields are open from March to May, and they are a popular tourist destination for people of all ages.</p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="slide fade">
+                            <picture class="slide-image">
+                                <source media="(max-width:599px)" srcset="images/slide4-small.webp">
+                                <source media="(max-width:799px)" srcset="images/slide4-medium.webp">
+                                <source media="(min-width:800px)" srcset="images/slide4-large.webp">
+                                <img src="images/slide4-small.webp" alt="woman-lifestyle-image" loading="lazy">
+                            </picture>
+                            <div class="slide-text-bg">
+                                <section class="text-container">
+                                    <h3>Carlsbad State Beach</h3>
+                                    <p>a popular spot for swimming, surfing, and sunbathing. The beach is also home to a number of restaurants and shops. Carlsbad State Beach is a great place to relax and enjoy the beautiful California coastline.</p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="next">&#10095;</a>
+                </div>
+                <div class="dots">
+                    <span class="dot dot1"></span>
+                    <span class="dot dot2"></span>
+                    <span class="dot dot3"></span>
+                    <span class="dot dot4"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-info">
+        &copy;<span id="currentyear"></span> Bountiful Foods | Leo Alfred A. Mosquera | WDD 230 Project | <span id="lastmodified"></span>
+        </div>
+    </footer>
+<script src="scripts/apps.js"></script>
+<script src="scripts/slideshow.js"></script>
+<script src="scripts/weather.js"></script>
+</body>
+</html>

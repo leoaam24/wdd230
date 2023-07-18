@@ -40,8 +40,7 @@ const year = d.getFullYear();
 const modified = document.lastModified;
 const dayInt = d.getDay();
 document.querySelector("#currentyear").textContent = year;
-document.querySelector("#datetime").textContent = `${dayName}, ${dayNumber} ${monthName} ${year}`;
-document.querySelector("#lastmodified").textContent = modified;
+document.querySelector("#lastmodified2").textContent = modified;
 
 if (mediaQuery.matches) {
 	document.getElementById("info-3").classList.toggle("open");

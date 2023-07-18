@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <meta name="description" content="Bountiful Foods Website assignment in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet" media="screen">
+    <link href="styles/large.css" rel="stylesheet" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <a href="index.html"><picture class="company-logo">
+            <source media="(max-width: 699px)" srcset="images/company-logo-small.webp">
+            <source media="(max-width: 1079px)" srcset="images/company-logo-medium.webp">
+            <source media="(min-width: 1080px)" srcset="images/company-logo-large.webp">
+            <img src="images/company-logo-large.webp" alt="bountiful-foods-logo" loading="lazy">
+        </picture></a>
+        <button id="navButtonOpen" class="navbutton">&#9776;</button>
+        <div class="sidenavbackground"></div>
+        <button id="navButtonClose" class="navbutton">X</button>
+        <div id="mySideNav" class="sidenav">
+            <nav class="innernav">
+                <ul class="mainnav">
+                    <li><a href="index.html" class="active2">Home</a></li>
+                    <li class="active"><a href="freshpage.html">Fresh</a></li>
+                    <li><a href="aboutus.html"><span>About Us</span></a></li>
+                </ul>   
+                <hr>    
+            </nav>
+            <p>Socials</p>
+            <nav class="socialsinnernav">
+                <ul class="socialsmainnav">
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.pinterest.com/" target="_blank">Pinterest</a></li>
+                </ul> 
+            </nav>
+            <nav class="socialsicon">
+                <ul class="socialsmainnav">
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="images/FB-Logo.webp" alt="fb-logo" loading="lazy"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="images/Insta-Logo.webp" alt="instagram-logo" loading="lazy"></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><img src="images/twitter-logo.webp" alt="twitter-logo" loading="lazy"></a></li>
+                    <li><a href="https://www.pinterest.com/" target="_blank"><img src="images/pinterest-logo.webp" alt="pinterest-logo" loading="lazy"></a></li>
+                </ul> 
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="weather-info">
+                <div class="weather-container">
+                    <div class="weather-card-background"></div>
+                    <section class="weather-card">
+                        <h4><span id="temp-value"></span> ºC</h4>
+                        <picture class="weather-image">
+                                <img id="weatherImg" src="images/palceholder-small.webp" alt="weather-placeholder">
+                        </picture>
+                        <span id="weather-condition"></span>
+                    </section>
+                    <div class="close-weather-card">
+                        <a class="close-weather">&#10094;</a>
+                    </div>
+                </div>
+                <div class="open-weather-card">
+                    <a class="open-weather">&#10095;</a>
+                </div>
+            </div>
+            <div class="order-form-container">
+                <form class="order-form" method="get" action="success.html">
+                    <fieldset class="customer-info">
+                        <legend>Customer Information</legend>
+                        <label class="top">First Name<input type="text" name="fname" id="fname" class="fname" pattern=^[a-zA-Z\s]{3,}$ required autofocus> </label>
+                        <label class="top">Email<input type="email" name="email" id="email" class="email" placeholder="youremail@email.com"></label>
+                        <label class="top">Phone<input type="tel" name="phone" id="phone" class="phone" pattern=\d{3,} required></label>
+                    </fieldset>
+                    <fieldset class="order-info">
+                        <legend>Fruit List</legend>    
+                        <div class="fruit-list"></div> 
+                    </fieldset>
+                    <fieldset class="other-instructions">
+                        <legend>Special Instructions (Optional)</legend>
+                        <textarea id="textInstructions" maxlength="500"></textarea>
+                    </fieldset>
+                    <input type="submit" id="orderButton" value="Click to Order">
+                </form>
+            </div> 
+        </div>
+    </main>
+    <footer>
+        <div class="footer-info">
+        &copy;<span id="currentyear"></span> Bountiful Foods | Leo Alfred A. Mosquera | WDD 230 Project | <span id="lastmodified"></span>
+        </div>
+    </footer>
+<script src="scripts/apps.js"></script>
+<script src="scripts/fresh.js"></script>
+</body>
+</html>

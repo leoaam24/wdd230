@@ -1,0 +1,260 @@
+@media only screen and (min-width:700px) and (max-width: 1079px) {
+
+body {
+    display: grid;
+    grid-template-rows:1fr;
+    margin: 0;
+}
+
+/*******HEADER************
+*************************/
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+picture.company-logo img{
+    width: 150px;
+}
+
+.sidenavigationbackground {
+    display: none;
+}
+
+#navButtonOpen {
+    display: none;
+}
+
+#mySideNav {
+    grid-column: 2;
+    display: flex;
+    justify-content: flex-end;
+    position:unset;
+    width: unset;
+    margin-left: 30%;
+    z-index: 0;
+    border-bottom-left-radius: 10px;
+}
+
+.innernav {
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.innernav ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.innernav ul li {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+
+.innernav ul li a{
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+
+.innernav ul li:hover {
+    background-color: transparent;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width:unset;
+}
+
+.innernav ul li:hover {
+    border: 1px solid rgba(255,255,255,0.5);
+    border-top-color: transparent;
+}
+
+.innernav ul li:hover > a {
+    color: #ffff;
+}
+
+
+.innernav hr {
+    display: none;
+}
+
+.sidenav p{
+    display: none;
+}
+
+.socialsinnernav {
+    display: none;
+}
+
+.socialsicon {
+    display: block;
+    position: absolute;
+    top: 4rem;
+}
+
+.active {
+    border: 1px solid rgba(255,255,255,0.5);
+    border-top: transparent;
+    box-shadow: 0px 0px 1px 1px #ffff;
+    background-color: rgba(0,0,0,0.2);
+}
+
+/*******MAIN*************
+*************************/
+
+.weather-card {
+    width: 30%;
+}
+
+.close-weather {
+    align-self: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 17px;
+}
+
+.open-weather-card {
+    width: 5%;
+}
+
+.open-weather {
+    color: black;
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+
+section.hero-message {
+    display: block;
+    margin: .5rem auto;
+    width: 70%;
+    justify-self: center;
+    text-align: left;
+}
+
+#freshButton {
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin: .5rem auto;
+}
+
+.order-counter {
+    margin: 1rem;
+}
+
+#orderCount {
+    font-size: 1.2rem;
+}
+
+/* SLIDESHOW */
+
+
+.slide{
+    padding: 1rem;
+}
+
+.slide-image img{
+    border-radius: 15px;
+}
+
+
+/*******FOOTER***********
+*************************/
+
+/*******FRESH PAGE*******
+*************************/
+.order-form-container {
+    margin-top: 0;
+}
+.order-form {
+    width: 96%;
+    margin: 0;
+}
+.customer-info, .order-info, .other-instructions {
+    width: 100%;
+}
+
+.order-info .fruit-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#orderButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%
+}
+
+/*******SUCCESS PAGE*****
+*************************/
+
+.success-container {
+    display: block;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+/*******ABOUTUS PAGE*******
+***************************/
+.aboutus-container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.history {
+    padding: .5rem;
+}
+
+
+.contact-info-container {
+    padding: .5rem;
+}
+
+
+.send-feedback label.sendinput {
+    margin-bottom: 1.5rem;
+}
+
+
+
+textarea.sendmessagetext {
+    display: block;
+    resize: none;
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#sendMessageButton {
+    width: 70%;
+    padding: .75rem;
+}
+
+
+.location p {
+    font-size: 1rem;
+}
+
+.hours {
+    display: flex;
+    flex-direction: column;
+}
+
+.hours p {
+    margin-left: 1rem;
+}
+
+
+}
+
