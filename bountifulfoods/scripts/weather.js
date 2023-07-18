@@ -108,8 +108,11 @@ function addResults(weatherData){
   dayafterthenextday.appendChild(dayafterthenextdayico);
   dayafterthenextday.appendChild(dayafterthenextdaytemp);
   tomorrowico.setAttribute('src', iconsrctomorrow);
+  tomorrowico.setAttribute('alt', 'weathercondition icon');
   dayaftertomorrowico.setAttribute('src', iconsrcdayaftertomorrow);
+  dayaftertomorrowico.setAttribute('alt', 'weathercondition icon');
   dayafterthenextdayico.setAttribute('src', iconsrcdayafterthenextday);
+  dayafterthenextdayico.setAttribute('alt', 'weathercondition icon');
   
   
   tomorrowtemp.innerHTML = `<strong>${timestamptomonth(tomorrowforecast.dt)} ${timestamptodate(tomorrowforecast.dt)}</strong> ${tomorrowforecast.main.temp_min}ºC / ${tomorrowforecast.main.temp_max}ºC`;
