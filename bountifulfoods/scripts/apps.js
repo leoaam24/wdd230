@@ -1,4 +1,4 @@
-if (!window.matchMedia('(min-width: 699px)').matches) {
+if (window.matchMedia('(min-width: 699px)').matches) {
     const navbuttonopen = document.querySelector('#navButtonOpen');
     const navbuttonclose = document.querySelector('#navButtonClose');
     const sidenavcontainer = document.querySelector('#mySideNav');

@@ -243,6 +243,12 @@ main {
     transition: width 0.5s ease-out, opacity .5s;
 }
 
+.weather-details {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+}
+
 .weather-info h4 {
     margin-top: 1rem;
     margin-bottom: .5rem;
@@ -294,7 +300,12 @@ main {
     
 }
 
-.weather-card p.caption {
+.weather-details span {
+    font-weight: bold;
+}
+
+.weather-details p.caption {
+    font-weight: bold;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -432,6 +443,7 @@ main {
 }
 
 .prev, .next {
+    display: block;
     cursor: pointer;
     color: #ffff;
     font-size: 1.5rem;

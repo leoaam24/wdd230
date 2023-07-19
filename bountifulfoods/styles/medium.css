@@ -174,7 +174,9 @@ section.hero-message {
 /*******FRESH PAGE*******
 *************************/
 .order-form-container {
-    margin-top: 0;
+    display: block;
+    margin: 2rem auto;
+    width: 80%;
 }
 .order-form {
     width: 96%;
