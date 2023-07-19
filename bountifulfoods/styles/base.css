@@ -53,6 +53,7 @@ picture.company-logo img{
     display: block;
     font-size: 1.5rem;
     margin-top: 2%;
+    border-radius: 5px;
 }
 
 #navButtonClose {
@@ -61,7 +62,7 @@ picture.company-logo img{
     font-size: 1.5rem;
     background-color: transparent;
     color: #ffff;
-    position: absolute;
+    position: fixed;
     right: 1rem;
     transition: .5s;
     margin-top: 3%;
@@ -71,15 +72,15 @@ picture.company-logo img{
 
 #mySideNav {
     position: fixed;
-    z-index: 1;
+    z-index: 99999;
     background-color: #384341;
     height: 100%;
     width: 0;
     margin: 0;
     top: 0;
     left: 0;
-    overflow-x: hidden;
     transition: .2s;
+    overflow-x: hidden;
 }
 
 .innernav {
@@ -112,7 +113,7 @@ picture.company-logo img{
 
 .innernav ul li:hover {
     background-color: #ffff;
-    width: 102%;
+    width: 105%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -233,7 +234,8 @@ main {
 }
 
 .weather-card {
-    background-color: #C5EDAC;
+    background-color: rgba(197, 237, 172, 0.5);
+    backdrop-filter: blur(6px);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     text-align: center;
@@ -241,6 +243,8 @@ main {
     flex-direction: column;
     width: 60%;
     transition: width 0.5s ease-out, opacity .5s;
+    flex-grow: -1;
+    flex-shrink: 1;
 }
 
 .weather-details {
@@ -274,7 +278,8 @@ main {
     display: flex;
     width: 5%;
     margin-left: -1rem;
-    background-color: #C5EDAC;
+    background-color: rgba(197, 237, 172, 0.5);
+    backdrop-filter: blur(6px);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -288,7 +293,7 @@ main {
 .open-weather-card {
     display: none;
     position: relative;
-    background-color: #C5EDAC;
+    background-color: rgba(197, 237, 172, 0.5);
     width: 10%;
     height: 50%;
     bottom: 7rem;
@@ -462,7 +467,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
 }
 
 .slide picture.slide-image img {
