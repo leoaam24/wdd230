@@ -243,7 +243,6 @@ main {
     flex-direction: column;
     width: 60%;
     transition: width 0.5s ease-out, opacity .5s;
-    flex-grow: -1;
     flex-shrink: 1;
 }
 
